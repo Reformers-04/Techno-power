@@ -1,0 +1,19 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --bg-color:white;
+    --text-color:black;
+    --color:#0C134F;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background:var(--color);
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
