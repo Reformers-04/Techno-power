@@ -32,15 +32,12 @@ By providing a platform with extensive customization options, the website solves
 + **Tech Innovations**: Highlighting the latest advancements in technology, including virtual reality, augmented reality, artificial intelligence, and robotics. Users can explore futuristic designs, prototypes, and learn about cutting-edge technologies.
 + **About Us**: Information about the company or organization behind the website, including its mission, vision, values, and the team involved. It provides insights into the company's background, expertise, and commitment to providing personalized tech solutions.
 
-# Wireframe URL :
+# Wireframe and Design URL:
 
-[OUR WIREFRAME LINK]()
-
-# Design URL :
-[OUR Design LINK]()
-
+[OUR WIREFRAME LINK](https://www.figma.com/file/DBUjINpaToJdvKsxn8LoKp/Techno-power?type=design&node-id=0-1&t=w6LWr1PzZkYgtC7g-0https://www.figma.com/file/DBUjINpaToJdvKsxn8LoKp/Techno-power?type=design&node-id=0-1&t=w6LWr1PzZkYgtC7g-0)
 
 # Website live URL
-[OUR WEBSITE LINK]()
+
+[OUR WEBSITE LINK](https://reformers-04.github.io/Techno-power/)
 
 # Instructions :
