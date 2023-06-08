@@ -3,8 +3,6 @@ The custom tech innovations marketplace is a website that offers a unique platfo
 
 # Our Team Name is "Reformers"
 
-Team leader is " Anfal Aldraidi "
-
 # Team Members are  :-
 
 + Buthaina Abu Jado
@@ -12,7 +10,7 @@ Team leader is " Anfal Aldraidi "
 + Odai Abu-Snineh
 + Faisal Qasem
 + Mohmad Al.Hilo
-+ Anfal Aldraidi
++ Anfal Aldraidi (leader)
 
 # We work on
 
