@@ -30,7 +30,7 @@
     cursor: pointer;
     z-index: 1;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 10px;
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     text-transform: uppercase;
     color: var(--color);
@@ -94,7 +94,7 @@
     color: #ffffff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     position: relative;
-    z-index: 10000;
+   z-index: 10000;
   }
   
   .header-1 span{
@@ -106,7 +106,7 @@
   .header-1 a{
     padding:0 .7rem;
     color:#fff;
-    font-size: 2rem;
+    font: size 1px;
   }
   
   .header-1 a:hover{
@@ -189,6 +189,7 @@
   
   .home{
     padding-top: 0;
+
   }
   
   .home .home-slider{
@@ -213,12 +214,12 @@
   
   .home .home-slider .box .content span{
     font-size: 3rem;
-    color:#444;
+    color:#fcfcfc;
   }
   
   .home .home-slider .box .content h3{
     font-size: 6rem;
-    color:#333;
+    color:#ffffff;
     padding:.5rem 0;
   }
   
@@ -263,7 +264,14 @@
     transform: scale(1.2);
   }
   
+  .category{
+    align-items: center;
+    font-size:30px;
+  }
+
+
   .category .box-container{
+    
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
@@ -307,193 +315,6 @@
   .category .box-container .box .content .btn{
     margin-bottom: 1.3rem;
   }
-  
-  .product .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:2rem;
-  }
-  
-  .product .box-container .box{
-    flex:1 1 30rem;
-    border:.1rem solid rgba(0,0,0,.3);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .product .box-container .box img{
-    height: 30rem;
-    width:100%;
-    border-bottom:.1rem solid rgba(0,0,0,.3);
-    object-fit: cover;
-  }
-  
-  .product .box-container .box .discount{
-    position: absolute;
-    top:1rem; left:1rem;
-    background:rgba(0,255,0,.1);
-    color:var(--green);
-    font-size: 2rem;
-    padding:.5rem 1rem;
-  }
-  
-  .product .box-container .box .icons{
-    position: absolute;
-    top:1rem; right:-8rem;
-    display: flex;
-    flex-flow: column;
-    background:#fff;
-    border-radius: 5rem;
-    padding:.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  }
-  
-  .product .box-container .box:hover .icons{
-    right:1rem;
-  }
-  
-  .product .box-container .box .icons a{
-    height: 4rem;
-    width:4rem;
-    line-height: 4rem;
-    font-size: 1.5rem;
-    color:#333;
-    border-radius: 5rem;
-    margin:.1rem;
-  }
-  
-  .product .box-container .box .icons a:hover{
-    color:#fff;
-    background:var(--green);
-  }
-  
-  .product .box-container .box h3{
-    color:#333;
-    font-size: 2.5rem;
-    padding:1rem 0;
-  }
-  
-  .product .box-container .box .stars i{
-    color:gold;
-    font-size: 2rem;
-  }
-  
-  .product .box-container .box .quantity{
-    padding:1rem 0;
-  }
-  
-  .product .box-container .box .quantity span{
-    font-size: 2rem;
-  }
-  
-  .product .box-container .box .quantity input{
-    font-size: 2rem;
-    padding:.5rem;
-    text-align: center;
-    background:rgba(0,0,0,.1);
-  }
-  
-  .product .box-container .box .price{
-    font-weight: bolder;
-    color:var(--green);
-    font-size: 2rem;
-  }
-  
-  .product .box-container .box .price span{
-    text-decoration: line-through;
-    color:#999;
-    font-size: 1.5rem;
-  }
-  
-  .product .box-container .box .btn{
-    display: block;
-    margin:2rem;
-  }
-  
-  .icons-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:2rem;
-  }
-  
-  .icons-container .icon{
-    padding:2rem 0;
-    display: flex;
-    align-items: center;
-    flex:1 1 25rem;
-  }
-  
-  .icons-container .icon .content{
-    padding-left: 2rem;
-  }
-  
-  .icons-container .icon .content h3{
-   font-size: 2rem;
-   color:var(--green);
-  }
-  
-  .icons-container .icon .content p{
-    font-size: 1.5rem;
-    color:#666;
-  }
-  
-  .deal .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    align-items: center;
-  }
-  
-  .deal .row .image{
-    flex:1 1 40rem;
-  }
-  
-  .deal .row .image img{
-    width:100%;
-  }
-  
-  .deal .row .content{
-    flex:1 1 40rem;
-  }
-  
-  .deal .row .content .title{
-    font-size: 3.5rem;
-    color:#333;
-  }
-  
-  .deal .row .content p{
-    font-size: 1.5rem;
-    color:#666;
-    padding:1rem 0;
-  }
-  
-  .deal .row .content .count-down{
-    display: flex;
-    padding:1rem 0;
-    gap:1.5rem;
-  }
-  
-  .deal .row .content .count-down .box{
-    width:9rem;
-    text-align: center;
-    border:.1rem solid rgba(0,0,0,.3);
-  }
-  
-  .deal .row .content .count-down .box h3{
-    font-size: 5rem;
-    color:#333;
-  }
-  
-  .deal .row .content .count-down .box span{
-    font-size: 1.7rem;
-    color:#fff;
-    display: block;
-    background:#666;
-    padding:.5rem;
-  }
-  
   .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -615,14 +436,51 @@
   }
   
   
+  .review {
+    text-align: center;
+    font-size:25px;
+    
+  }
+  .review h1{
+    font-size: 50px;
+  }
+  .review .box-container .box {
+    flex:1 1 10rem;
+    height: 35rem;
+    display: flex;
+    background-image: linear-gradient(#D4ADFC, #0C134F);
+  }
+  .review .box-container{
+    border: 0.2em solid rgba(0,0,0,.3);
+  }
+   .review .box-container .box img{
+    height: 4s00px;
+    width:300px;
+   
+  }
+  
+  .review .box-container .box .content{
+  
+    text-align: center;
+    padding:.5rem 0;
+    width:100%;
+    margin-top: 50px;
+    
+  }
   
   
+  .review .box-container .firstDiv {
+    display: flex;
+  }
+  .review .box-container .sdiv {
+    display: flex;
+  }
   
-  
-  
-  
-  
-  
+  .stars{
+    background-color: white;
+    border: 0.2em solid rgba(255, 255, 255);
+    
+  }
   
   
   
