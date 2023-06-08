@@ -223,47 +223,6 @@
     padding:.5rem 0;
   }
   
-  .banner-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-  }
-  
-  .banner-container .banner{
-    flex:1 1 40rem;
-    height:25rem;
-    border:.1rem solid rgba(0,0,0,.3);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .banner-container .banner .content{
-    position: absolute;
-    top:50%; left: 4%;
-    transform: translateY(-50%);
-  }
-  
-  .banner-container .banner img{
-    height: 100%;
-    width:100%;
-    object-fit: cover;
-  }
-  
-  .banner-container .banner .content span{
-    color:#666;
-    font-size:1.7rem;
-  }
-  
-  .banner-container .banner .content h3{
-    color:#333;
-    font-size:3rem;
-  }
-  
-  .banner-container .banner:hover img{
-    transform: scale(1.2);
-  }
-  
   .category{
     align-items: center;
     font-size:30px;
@@ -370,6 +329,11 @@
     color:#666;
   }
   
+  .footer{
+    background:#0C134F;
+    color: white;
+  }
+
   .footer .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -381,20 +345,20 @@
   }
   
   .footer .box-container .box h3{
-    color:#333;
+    color:white;
     font-size: 2.5rem;
     padding:1rem 0;
   }
   
   .footer .box-container .box p{
-    color:#666;
+    color:white;
     font-size: 1.5rem;
     padding:1rem 0;
   }
   
   .footer .box-container .box a{
     display: block;
-    color:#666;
+    color:white;
     font-size: 1.5rem;
     padding:1rem 0;
   }
@@ -446,16 +410,18 @@
   }
   .review .box-container .box {
     flex:1 1 10rem;
-    height: 35rem;
+    height: 400px;
     display: flex;
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px 50px;
     background-image: linear-gradient(#D4ADFC, #0C134F);
   }
-  .review .box-container{
-    border: 0.2em solid rgba(0,0,0,.3);
-  }
+  
    .review .box-container .box img{
-    height: 4s00px;
-    width:300px;
+    border-radius: 20px;
+    height: 300px;
+    width:200px;
    
   }
   
@@ -463,8 +429,8 @@
   
     text-align: center;
     padding:.5rem 0;
-    width:100%;
-    margin-top: 50px;
+    width: 400px;
+    margin: 70px;
     
   }
   
@@ -482,12 +448,40 @@
     
   }
   
+  .celass{
+    align-items: center;
+   
+  }
+
+  .celass h1{
+    text-align: center;
+    font-size: 50px;
+  }
   
+  .celass .cel {
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    
+  }
   
+  .celass .cel .home-icons{
+    display: flex;
+    margin-right: 400px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+
+  }
   
-  
-  
-  
+  .celass .cel .home-icons img {
+    height: 120px;
+    width: 120px;
+  }
+
+
+
+
+
   /* media queries  */
   
   @media (max-width:1200px){
