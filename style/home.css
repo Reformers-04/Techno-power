@@ -1,7 +1,7 @@
 :root {
     --bg-color: white;
     --text-color: black;
-    --green:#754999;
+    --green:#ce88d4;
   }
   
   body {
@@ -32,7 +32,7 @@
   }
   .btn {
     
-    --color: #754999;
+    --color: #ce88d4;
     --color2: rgb(10, 25, 30);
     padding: 0.8em 1.75em;
     align-items: center;
@@ -101,7 +101,7 @@
     align-items: center;
     justify-content: space-between;
     padding:2rem 9%;
-    background:var(--green);
+    background:#27036b;
   }
   
   .header-1{
@@ -416,7 +416,7 @@
   }
  
    .box-container .box1 {
-      background: linear-gradient(to bottom, #451880, #eb9bff, #451880);
+      background: linear-gradient(to bottom, #975ae7, #eb9bff, #8d49e6);
       border-radius: 2rem;
       margin: 3rem;
       
@@ -810,7 +810,26 @@
 }
 
 
+.decrease-btn{
+  height: 20px;
+  width:20px;
+  padding:0 ;
+  margin: 2px;
+  --glow-color:none;
+  --glow-spread-color: none;
+  --enhanced-glow-color:none;
+  --btn-color: none;
+}
 
+.increase-btn{
+  height: 20px;
+  width:20px;
+  padding:0 ;
+  margin: 2px;
+  --glow-color:none;
+  --glow-spread-color: none;
+  --enhanced-glow-color:none;
+  --btn-color: none;}
 
 
 button {
@@ -886,7 +905,7 @@ button {
       
       .cart-wrapper{
           overflow-y: auto;
-          max-height: 350px;
+          max-height: 50%;
           width:24vw;
       }
       .subtotal{
@@ -897,11 +916,15 @@ button {
           width:95%;
           text-align: center;
           cursor: pointer;
-          background-color: rgb(126, 42, 165);
+          background-color: rgb(189, 117, 223);
           font-size: large;
           color: #fff;
           margin:10px auto;
           padding:10px 15px;
+         
+      }
+      .checkout{
+        margin-left: 4%;
       }
       .view-cart{
           background-color: #fff;
@@ -954,7 +977,9 @@ button {
            position: fixed;
            top:12vh;
            background-color: #fff;
-           margin-right:2%;
+           padding-right:2% ;
+           height: 100%;
+
        }
       
        .hide{
@@ -988,7 +1013,7 @@ button {
           align-items: center;
           border: solid 2px rgb(107, 74, 185);
           margin: 5rem;
-          background: linear-gradient(to bottom, #d459ca, #7700ff);
+          background: linear-gradient(to bottom, #d875d0, #7f27e4);
       }
       .card-item img{
           width:100%;
@@ -996,10 +1021,10 @@ button {
       }
       .card-item .details{
           text-align: center; 
-          
+          color: #ddd;
       }
       .img{
-        height: 300px;
+        height: 30050px;
         width: 250px;
         margin-bottom: 2rem;
       }

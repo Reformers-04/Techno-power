@@ -51,149 +51,6 @@ var swiper = new Swiper(".home-slider", {
     loop:true,
 });
 
-let countDate = new Date('june 1, 2021 00:00:00').getTime();
-
-function countDown(){
-
-    let now = new Date().getTime();
-
-    gap = countDate - now;
-
-    let second = 1000;
-    let minute = second * 60;
-    let hour = minute * 60;
-    let day = hour * 24;
-
-    let d = Math.floor(gap / (day));
-    let h = Math.floor((gap % (day)) / (hour));
-    let m = Math.floor((gap % (hour)) / (minute));
-    let s = Math.floor((gap % (minute)) / (second));
-
-    document.getElementById('day').innerText = d;
-    document.getElementById('hour').innerText = h;
-    document.getElementById('minute').innerText = m;
-    document.getElementById('second').innerText = s;
-
-}
-
-setInterval(function(){
-    countDown();
-},1000)
-
-
-
-let list = document.querySelectorAll('.list .item');
-list.forEach(item => {
-    item.addEventListener('click', function(event){
-        if(event.target.classList.contains('add')){
-            var itemNew = item.cloneNode(true);
-            let checkIsset  = false;
-
-            let listCart = document.querySelectorAll('.cart .item');
-            listCart.forEach(cart =>{
-                if(cart.getAttribute('data-key') == itemNew.getAttribute('data-key')){
-                    checkIsset = true;
-                    cart.classList.add('danger');
-                    setTimeout(function(){
-                        cart.classList.remove('danger');
-                    },1000)
-                }
-            })
-            if(checkIsset == false){
-                document.querySelector('.listCart').appendChild(itemNew);
-            }
-
-        }
-    })
-})
-function Remove($key){
-    let listCart = document.querySelectorAll('.cart .item');
-    listCart.forEach(item => {
-        if(item.getAttribute('data-key') == $key){
-            item.remove();
-            return;
-        }
-    })
-}
-
-const addToCartButtons = document.querySelectorAll('.box .btn');
-
-// Create an empty cart object to store the selected products
-const cart = {};
-
-// Add event listeners to the add to cart buttons
-addToCartButtons.forEach((button) => {
-  button.addEventListener('click', addToCart);
-});
-
-// Event handler for the add to cart button
-function addToCart(event) {
-  // Prevent the default form submission behavior
-  event.preventDefault();
-
-  // Get the parent box element
-  const box = event.target.closest('.box');
-
-  // Get the product details from the box element
-  const productId = box.getAttribute('data-product-id');
-  const productName = box.querySelector('h3').textContent;
-  const productPrice = parseFloat(box.querySelector('.price').textContent.replace('$', ''));
-  const productQuantity = parseInt(box.querySelector('.quantity input').value);
-
-  // Add the product to the cart object
-  cart[productId] = {
-    name: productName,
-    price: productPrice,
-    quantity: productQuantity
-  };
-
-  // Update the cart UI
-  updateCartUI();
-}
-
-// Function to update the cart UI
-function updateCartUI() {
-  // Get the cart element
-  const cartElement = document.getElementById('cart');
-
-  // Clear the cart content
-  cartElement.innerHTML = '';
-
-  // Calculate the total price
-  let totalPrice = 0;
-
-  // Loop through the selected products in the cart object
-  for (const productId in cart) {
-    if (cart.hasOwnProperty(productId)) {
-      const product = cart[productId];
-
-      // Create a new cart item element
-      const cartItem = document.createElement('div');
-      cartItem.classList.add('cart-item');
-
-      // Set the content of the cart item
-      cartItem.innerHTML = `
-        <span>${product.name}</span>
-        <span>${product.quantity}</span>
-        <span>$${product.price.toFixed(2)}</span>
-      `;
-
-      // Add the cart item to the cart element
-      cartElement.appendChild(cartItem);
-
-      // Calculate the subtotal for the current product
-      const subtotal = product.price * product.quantity;
-      totalPrice += subtotal;
-    }
-  }
-
-  // Update the total price in the cart UI
-  const totalPriceElement = document.createElement('div');
-  totalPriceElement.classList.add('total-price');
-  totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
-  cartElement.appendChild(totalPriceElement);
-}
-
 
 
 
@@ -205,7 +62,19 @@ class CartItem{
         this.price = price
         this.quantity = 1
    }
+   increaseQuantity() {
+    this.quantity++;
+  }
+
+  decreaseQuantity() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
 }
+
+
+
 
 class LocalCart{
     static key = "cartItems"
@@ -250,7 +119,6 @@ class LocalCart{
        updateCartUI()
     }
 }
-
 
 const cartIcon = document.querySelector('.fa-cart-arrow-down')
 const wholeCartWindow = document.querySelector('.whole-cart-window')
@@ -342,10 +210,55 @@ function updateCartUI(){
     cartIcon.classList.remove('non-empty')
 }
 document.addEventListener('DOMContentLoaded', ()=>{updateCartUI()})
-    
+function updateCartUI() {
+    const cartWrapper = document.querySelector('.cart-wrapper');
+    cartWrapper.innerHTML = '';
+    const items = LocalCart.getLocalCartItems();
+    if (items === null) return;
+    let count = 0;
+    let total = 0;
+    for (const [key, value] of items.entries()) {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        let price = value.price * value.quantity;
+        price = Math.round(price * 100) / 100;
+        count += 1;
+        total += price;
+        cartItem.innerHTML =
+            `
+        <img src="${value.img}"> 
+        <div class="details">
+            <h3>${value.name}</h3>
+            <p>${value.desc}
+                <span class="quantity">Quantity: ${value.quantity}</span>
+                <span class="price">Price: $ ${price}</span>
+            </p>
+        </div>
+        <div class="cancel"><i class="fas fa-window-close"></i></div>
+        `;
+        cartItem.lastElementChild.addEventListener('click', () => {
+            LocalCart.removeItemFromCart(key);
+        });
+        cartWrapper.append(cartItem);
+    }
 
+    if (count > 0) {
+        cartIcon.classList.add('non-empty');
+        let root = document.querySelector(':root');
+        root.style.setProperty('--after-content', `"${count}"`);
 
+        // Calculate tax and delivery
+        const tax = total * 0.05;
+        const delivery = 20;
 
+        total = total + tax + delivery;
+        total = Math.round(total * 100) / 100;
 
-
-
+        const subtotal = document.querySelector('.subtotal');
+        subtotal.innerHTML = `SubTotal: $${total}  
+       <br>(Tax: $${tax}, Delivery: $${delivery})`;
+    } else {
+        cartIcon.classList.remove('non-empty');
+    }
+}
+   
