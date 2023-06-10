@@ -1,0 +1,35 @@
+.div1{
+    text-align: center;
+
+}
+
+body {
+
+    background: #ffffff;
+    color: black;
+}
+.header-3{
+    background:#27036b;
+    color: #FFFFFF;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position:relative;
+    z-index: 10000;
+    text-decoration: none;
+  }
+.header-3 .navbar a{
+    color:#ffffff;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+  .page{
+   border-bottom:solid 2px rgb(213, 136, 248) ;
+  }
+  .header-3 .icons a{
+    color:#ffffff;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  .header-3 a:hover{
+    color:var(--green);
+  }

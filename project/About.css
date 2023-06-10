@@ -1,0 +1,163 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-deg {
+    float: right;
+border-radius: 4%;
+padding-right: 1.5%;
+
+}
+
+.img-degg {
+    float: left;
+border-radius: 4%;
+padding-right: 1.5%;
+}
+
+.first-div {
+
+    
+    background-color: #D4ADFC;
+    width: 70%;
+    left: 15%;
+    top: 35%;
+    padding: 1%;
+    position: absolute;
+    text-align: center;
+  border-radius: 4%;
+}
+
+.second-div {
+  
+    background-color: #D4ADFC;
+    width: 70%;
+    left: 15%;
+    height: 49%;
+    padding: 1%;
+    top: 100%;
+    position: absolute;
+    text-align: center;
+    border-radius: 4%;
+
+}
+
+.team {
+    text-align: center;
+    margin-top: 70%;
+}
+
+body {
+
+    background: #ffffff;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pro-card {
+
+    width: 245px;
+    padding: 30px;
+    background-size: 100% auto;
+    background-color: #5C469C;
+    transition: all 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-card img {
+    border-radius: 50%;
+    display: block;
+    transition: all 0.4s ease-out;
+    transform-origin: top;
+    position: relative;
+    z-index: 1;
+}
+
+.pro-card:hover {
+    background-position: 0 -50%
+}
+
+.pro-card:hover img {
+    transform: scale(0.3);
+}
+
+.pro-card .description {
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.pro-card .description h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.4s ease-out;
+    transform: translateX(-150%);
+}
+
+.pro-card .description p {
+    margin-bottom: 0px;
+    transition: all 0.4s ease-out;
+    transform: translateX(150%);
+}
+
+.pro-card:hover .description h3 {
+    transform: translateX(0%);
+}
+
+.pro-card:hover .description p {
+    transform: translateX(0%);
+}
+
+.card{
+    display: inline;
+
+}
+.first{
+    display: inline-flex;
+    margin-left: 20%;
+    
+}
+.second{
+    display: inline-flex;
+    margin-left: 20%;
+}
+.header-3{
+    background:#27036b;
+    color: #FFFFFF;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position:relative;
+    z-index: 10000;
+    text-decoration: none;
+  }
+.header-3 .navbar a{
+    color:#ffffff;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+  .page{
+   border-bottom:solid 2px rgb(213, 136, 248) ;
+  }
+  .header-3 .icons a{
+    color:#ffffff;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  .header-3 a:hover{
+    color:var(--green);
+  }
