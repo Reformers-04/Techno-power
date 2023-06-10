@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const modeToggle = document.getElementById('mode-toggle');
 const body = document.body;
 
@@ -126,7 +133,9 @@ wholeCartWindow.inWindow = 0
 const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
 addToCartBtns.forEach( (btn)=>{
     btn.addEventListener('click', addItemFunction)
+   
 }  )
+
 
 function addItemFunction(e){
     const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
@@ -262,3 +271,10 @@ function updateCartUI() {
     }
 }
    
+
+
+
+
+
+
+

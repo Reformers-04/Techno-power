@@ -9,6 +9,17 @@
     color: var(--text-color);
    width: 100%;
   }
+ 
+
+
+
+
+
+
+
+
+
+
   
   .dark-mode {
     --bg-color: #000000;
@@ -833,10 +844,10 @@
 
 
 button {
-  --glow-color: rgb(217, 176, 255);
+/* --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgb(100, 61, 136);
+  --btn-color: rgb(100, 61, 136);*/
   border: .25em solid var(--glow-color);
   padding: 1em 3em;
   color: var(--glow-color);
@@ -1047,3 +1058,173 @@ button {
           font-size: large;
           color:#5f208a
       }
+
+
+
+
+        
+
+
+
+
+
+
+
+      
+
+
+      .container{
+        width: 800px;
+        height:300px;
+        border: 1px solid;
+        background-color: rgba(231, 187, 248, 0.589);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        padding-bottom: 0;
+        margin-left: 80px;
+        margin-bottom: 50px;
+       
+    }
+    hr{
+      border:solid #27036b 3px;
+      width: 90%;
+      margin-top: 20px;
+    }
+    .payparg{
+      background-color:rgb(234, 218, 250) ;
+      border-radius: 4px;
+      border: solid #27174d 2px;
+      margin: 5px;
+    }
+    .payparg p{
+      font-size: 18px;
+      margin: 20px;
+      display: flex;
+    }
+    
+    .container h1{
+        text-align: center;
+    }
+    
+    .first-row{
+         display: flex;
+    }
+    
+    .owner{
+        width: 100%;
+        margin-right: 40px;
+    }
+    
+    .input-field{
+        border: 1px solid #999;
+    }
+    
+    .input-field input{
+        width: 100%;
+        
+        padding: 10px;
+    }
+    
+    .selection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .selection select{
+        padding: 10px 20px;
+    }
+    
+    .cheack{
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    
+    a:hover{
+        background-color: rgb(35, 30, 109);
+    }
+    
+    .cards img{
+        width: 100px;
+    }
+
+
+
+
+    .check {
+      cursor: pointer;
+      position: relative;
+      margin: auto;
+      width: 18px;
+      height: 18px;
+      -webkit-tap-highlight-color: transparent;
+      transform: translate3d(0, 0, 0);
+      margin: 5px;
+      margin-top: 5px;
+    }
+    
+    .check:before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(34, 50, 84, 0.03);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    
+    .check svg {
+      position: relative;
+      z-index: 1;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #262e3d;
+      stroke-width: 1.5;
+      transform: translate3d(0, 0, 0);
+      transition: all 0.2s ease;
+    }
+    
+    .check svg path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+    }
+    
+    .check svg polyline {
+      stroke-dasharray: 22;
+      stroke-dashoffset: 66;
+    }
+    
+    .check:hover:before {
+      opacity: 1;
+    }
+    
+    .check:hover svg {
+      margin: 5px;
+      stroke: var(--accent-color, #17155e);
+    }
+    
+    #cbx2:checked + .check svg {
+      stroke: var(--accent-color, #893aa8);
+    }
+    
+    #cbx2:checked + .check svg path {
+      stroke-dashoffset: 60;
+      transition: all 0.3s linear;
+    }
+    
+    #cbx2:checked + .check svg polyline {
+      stroke-dashoffset: 42;
+      transition: all 0.2s linear;
+      transition-delay: 0.15s;
+    }
