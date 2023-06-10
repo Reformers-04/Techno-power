@@ -267,11 +267,20 @@ main {
 }
 
 .selected h3,
-.customize div p {
-  font-size: 1.5vw;
-  margin: 0 0 0 0.5vw;
+.customize div p,
+{
+font-size: 1.5vw;
+/* margin: 0 0 0 0.5vw; */
+font-weight: bold;
+padding: 1vw;
+}
+
+
+select {
+  font-size: 1.0vw;
+  /* margin: 0 0 0 0.5vw; */
   font-weight: bold;
-  padding: 1vw;
+  padding: 0.3vw 0;
 }
 
 .customize div button {
@@ -353,6 +362,7 @@ fieldset img {
   text-align: center;
   font-size: 1.2em;
   margin-bottom: 8px;
+  padding: 0 4px 0 0;
 }
 
 .price {
