@@ -20,174 +20,12 @@ body {
 
 
 
-.btnHead {
+ 
+
+
+
+
     
-  --color: #7555b9;
-  --color2: rgb(10, 25, 30);
-  padding: 0.8em 1.75em;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 6px;
-  border: .3px solid var(--color);
-  transition: .5s;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 17px;
-  font-family: 'Roboto', 'Segoe UI', sans-serif;
-  text-transform: uppercase;
-  color: var(--color);
- }
- 
- .btnHead::after, .btnHead::before {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  transform: skew(90deg) translate(-50%, -50%);
-  position: absolute;
-  inset: 50%;
-  left: 25%;
-  z-index: -1;
-  transition: .5s ease-out;
-  background-color: var(--color);
- }
- 
- .btnHead::before {
-  top: -50%;
-  left: -25%;
-  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
- }
- 
- .btnHead:hover::before {
-  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
- }
- 
- .btnHead:hover::after {
-  transform: skew(45deg) translate(-50%, -50%);
- }
- 
- .btnHead:hover {
-  color: var(--color2);
- }
- 
- .btnHead:active {
-  filter: brightness(.7);
-  transform: scale(.98);
- }
-.header-1,
-.header-2,
-.header-3{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:2rem 9%;
-  background:var(--green);
-}
-
-.header-1{
-  border-bottom: .1rem solid rgb(255, 255, 255);
-}
-
-.header-3{
-  background:#27036b;
-  color: #ffffff;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  position: relative;
-  z-index: 10000;
-}
-
-.header-1 span{
-  font-weight: lighter;
-  color:#fff;
-  font-size: 1.7rem;
-}
-
-.header-1 a{
-  padding:0 .7rem;
-  color:#fff;
-  font-size: 2rem;
-}
-
-.header-1 a:hover{
-  color:yellow;
-}
-
-.header-2 .logo{
-  font-weight: bolder;
-  font-size: 3rem;
-  color:#fff;
-}
-
-.header-2 .logo i{
-  color:yellow;
-}
-
-.header-2 .search-bar-container{
-  display: flex;
-  align-items: center;
-  width: 50rem;
-  padding:1.5rem;
-  background:rgba(255,255,255,.2);
-  border-radius: .5rem;
-}
-
-.header-2 .search-bar-container #search-bar{
-  width: 100%;
-  background:none;
-  text-transform: none;
-  color:#fff;
-  font-size: 1.7rem;
-}
-
-.header-2 .search-bar-container #search-bar::placeholder{
-  text-transform: capitalize;
-  color:#ddd;
-}
-
-.header-2 .search-bar-container label{
-  color:#fff;
-  cursor: pointer;
-  font-size: 2rem;
-  padding:0 .5rem;
-}
-
-.header-2 .search-bar-container label:hover{
-  color:yellow;
-}
-
-.header-3 .navbar a{
-  color:#ffffff;
-  font-size: 2rem;
-  margin-right: 2rem;
-}
-
-.header-3 .icons a{
-  color:#ffffff;
-  font-size: 2.5rem;
-  margin-left: 2rem;
-}
-
-.header-3 a:hover{
-  color:var(--green);
-}
-
-#menu-bar{
-  font-size: 3rem;
-  color:#666;
-  border:.1rem solid #666;
-  border-radius: .5rem;
-  padding:.5rem 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.header-3.active{
-  position: fixed;
-  top:0; left: 0; right: 0;
-}
 
 
 
@@ -197,13 +35,7 @@ body {
 
 
 
-
-
-
-
-
-
-.container{
+.container-product{
     width: 100%;
     display: flex;
 }
@@ -272,7 +104,7 @@ body {
     
 }
 
-.btn{
+.btnproduct{
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -281,7 +113,7 @@ body {
     cursor: pointer;
     background: #D4ADFC;
 }
-.btn.active{
+.btnproduct.active{
     background: #4833ec;
 }
 
@@ -429,16 +261,7 @@ i{
   margin: 16px;
 }
 
-.ReviewsSction{
-  display: flex;
-  
-    margin-left: 3.5%;
-    margin-top: 16px;
-    text-align: center;
-    align-content: center;
 
-
-}
 
 .gradient2{
   background-image: linear-gradient(to bottom , #D4ADFC, #0C134F);
@@ -471,26 +294,69 @@ i{
 }
 
 .ReviewText{
-  margin-left: 20%;
   border-left: 2px solid black;
-  height: 120px;
-  margin-top: 1.5%;
-  position:absolute;
-  left: 30%;
-  padding-left: 4%;
   text-align: center;
+  align-items: center;
+  padding: 50px 0;
+  height: 80%;
 
-
+}
+.ReviewText p{
+  height: 100%;
 }
 .ReviewText2{
-  margin-left: 20%;
   border-left: 2px solid black;
-  height: 120px;
-  margin-top: 10%;
-  position:absolute;
-  left: 30%;
-  padding-left: 4%;
   text-align: center;
-
+  align-items: center;
+  padding: 50px 0;
+  height: 80%;
   
 }
+.ReviewText2 p{
+  height: 100%;
+  text-align: center;
+  
+  
+}
+
+
+
+
+
+.ReviewsSction{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+grid-template-rows: 1fr 1fr;
+grid-column-gap: 15%;
+margin-left: 3.5%;
+margin-top: 16px;
+
+
+}
+.ReviewOne{
+
+  grid-column:1/2 ;
+  grid-row: 1/2;
+}
+.ReviewTow{
+
+  grid-column:1/2 ;
+  grid-row: 2/3;
+
+}
+.t1{
+  grid-column:2/3 ;
+  grid-row: 1/2;
+
+}
+.t2{
+  grid-column:2/3 ;
+  grid-row: 2/3;
+}
+
+
+
+
+
+
+
