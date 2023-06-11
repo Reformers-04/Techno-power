@@ -7,11 +7,7 @@
   <title>Customize Page</title>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
   <link rel="stylesheet" href="style/customize.css">
 </head>
 
@@ -28,9 +24,8 @@
         <a href="catalog.html">Product Catalog</a>
         <a href="About.html">About Us</a>
       </nav>
-      <button id="mode-toggle" class="btn"> <img src=":duck: icon _Brightness contrast_.png"
+      <button id="mode-toggle" class="btn"> <img src="./🦆 icon _Brightness contrast_.png"
           style="height: 30px; width: 30px; display: flex; "> </button>
-      </button>
       <div class="icons">
         <a href="#" class="fas fa-shopping-cart"></a>
       </div>
@@ -64,7 +59,7 @@
           <br>
           <div class="hardware">
             <p>Hardware Specification</p>
-            <select>
+            <select id="hardware-select">
               <optgroup label="Laptop">
                 <option>Mac- Laptop</option>
                 <option>Dell- Laptop</option>
@@ -86,7 +81,6 @@
               <input type="checkbox" id="add-ssd">
               <label for="add-ssd">additional SSD</label>
             </div>
-
             <div class="check-div">
               <input type="checkbox" id="warranty" selected>
               <label for="warranty">long warranty</label>
@@ -96,7 +90,7 @@
           <br>
           <div class="Design">
             <p>Design & Color</p>
-            <select>
+            <select id="design-select">
               <optgroup label="Color">
                 <option selected>Silver-Design</option>
                 <option>Gold-Design</option>
@@ -122,7 +116,7 @@
           <br>
           <div class="Software">
             <p>Software</p>
-            <select>
+            <select id="software-select">
               <optgroup label="OS">
                 <option selected>macOS Monterey</option>
                 <option>Windows 10</option>
@@ -152,9 +146,9 @@
         <br>
 
         <div class="items">
-          <fieldset>
+          <fieldset class="card1 active">
             <img src="./ass/Customize/laptop-silver.png">
-            <h2> Silver Mac Laptop</h2>
+            <h2>Silver Mac Laptop</h2>
             <p>Sleek Design and Superior Performance</p>
             <p class="price">1299 JD</p>
             <ul>
@@ -172,79 +166,126 @@
             <button class="buy">Buy it</button>
             <br>
           </fieldset>
+
+          <fieldset class="card2">
+            <!-- Content for Card 2 -->
+            <img src="./ass/Customize/laptop-gold.png">
+            <h2>Gold Mac Laptop</h2>
+            <p>Elegant Design and Enhanced Performance</p>
+            <p class="price">1399 JD</p>
+            <ul>
+              <li>Processor: Intel Core i7 10th Gen, 1.2GHz (up to 3.8GHz with Turbo Boost)</li>
+              <li>RAM: 16GB LPDDR4X memory</li>
+              <li>Storage: 512GB PCIe-based SSD storage</li>
+              <li>Graphics: Intel Iris Plus Graphics</li>
+              <li>Screen Size: 13.3-inch Retina Display</li>
+              <li>Connectivity: Two Thunderbolt/USB 4 ports, 3.5mm headphone jack, Bluetooth 5.0, Wi-Fi 6</li>
+              <li>Operating System: macOS Monterey</li>
+              <li>Color: Gold</li>
+              <li>Weight: 2.8 pounds (1.29 kilograms)</li>
+            </ul>
+            <br>
+            <button class="buy">Buy it</button>
+            <br>
+          </fieldset>
+
+          <fieldset class="card3">
+            <!-- Content for Card 3 -->
+            <img src="./ass/Customize/laptop-Space-Gray.png">
+            <h2>Space Gray Mac Laptop</h2>
+            <p>Sleek and Powerful for Professionals</p>
+            <p class="price">1499 JD</p>
+            <ul>
+              <li>Processor: Intel Core i7 10th Gen, 1.3GHz (up to 3.9GHz with Turbo Boost)</li>
+              <li>RAM: 16GB LPDDR4X memory</li>
+              <li>Storage: 1TB PCIe-based SSD storage</li>
+              <li>Graphics: Intel Iris Plus Graphics</li>
+              <li>Screen Size: 13.3-inch Retina Display</li>
+              <li>Connectivity: Four Thunderbolt/USB 4 ports, 3.5mm headphone jack, Bluetooth 5.0, Wi-Fi 6</li>
+              <li>Operating System: macOS Monterey</li>
+              <li>Color: Space Gray</li>
+              <li>Weight: 2.8 pounds (1.29 kilograms)</li>
+            </ul>
+            <br>
+            <button class="buy">Buy it</button>
+            <br>
+          </fieldset>
         </div>
-        <a href="#" class="image-button">
+        <a class="image-button">
           <img class="icon" src="./ass/Customize/slide-arrow.png" width="60vw" height="60vw">
         </a>
       </div>
+  </div>
+  </main>
+  </div>
   </div>
   </div>
   </main>
 
   </div>
 
-
-
   <!-- footer section starts  -->
   <section class="footer">
     <div class="box-container">
       <div class="box">
         <h3>about us</h3>
-        <p>Techno-Power is one of the largest IT distributors in the market.Techno-Power specializes in offering a
-          complete selection of memory,
-          storage products and other hardware and software components for PCs and servers,
-          and consumer electronics</p>
+        <p>Techno-Power is one of the largest IT distributors in the market. Techno-Power specializes in offering a
+          complete selection of memory, storage products, and other hardware and software components for PCs and
+          servers,
+          and consumer electronics.</p>
       </div>
       <div class="box">
         <h3>branch locations</h3>
-        <a href="#">jordan</a>
+        <a href="#">Jordan</a>
         <a href="#">USA</a>
-        <a href="#">japan</a>
-        <a href="#">france</a>
+        <a href="#">Japan</a>
+        <a href="#">France</a>
       </div>
       <div class="box">
         <h3>quick links</h3>
-        <a href="hompage.html">home</a>
-        <a href="customize.html">category</a>
-        <a href="catalog.html">product</a>
+        <a href="hompage.html">Home</a>
+        <a href="customize.html">Category</a>
+        <a href="catalog.html">Product</a>
       </div>
       <div class="box">
         <h3>follow us</h3>
-        <a href="https://www.facebook.com/">facebook</a>
+        <a href="https://www.facebook.com/">Facebook</a>
         <a href="tel:+962069999999">+962 06 999 99</a>
       </div>
     </div>
-    <h1 class="credit"> created by <span> Techno-Power </span> | all rights reserved! </h1>
+    <h1 class="credit"> Created by <span>Techno-Power</span> | All rights reserved! </h1>
   </section>
-
   <!-- footer section ends -->
 
   <!-- scroll top button  -->
   <a href="#home" class="scroll-top fas fa-angle-up"></a>
 
-
-
-
-
-
-
-
-
-
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var cards = document.querySelectorAll('.items fieldset');
+    var currentCardIndex = 0;
 
-
-
-
-
-  <script type="text/javascript">
-    function rangeSlide(value) {
-      document.getElementById('rangeValue').innerHTML = value;
+    function switchCard() {
+      var activeCard = cards[currentCardIndex];
+      activeCard.classList.add('active');
+      for (var i = 0; i < cards.length; i++) {
+        if (i !== currentCardIndex) {
+          cards[i].classList.remove('active');
+        }
+      }
+      currentCardIndex = (currentCardIndex + 1) % cards.length;
     }
+
+    var imageButton = document.querySelector('.image-button');
+    imageButton.addEventListener('click', switchCard);
+
+    // Add initial active class to the first card
+    cards[currentCardIndex].classList.add('active');
   </script>
 
-  <script src="js/customize.js"></script>
+  </script>
+
+  <!-- <script src="./js/customize.js"></script> -->
 </body>
 
 </html>

@@ -255,6 +255,14 @@ select {
 
 fieldset {
   background-color: white;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+fieldset.active {
+  opacity: 1;
 }
 
 
@@ -283,7 +291,14 @@ fieldset img {
 }
 
 .items fieldset {
+  /* display: none; */
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  pointer-events: none;
 
+}
+
+.items fieldset.active {
   border-radius: 25px;
   margin: 2vw 1.5vw 2vw 0;
   padding: 0;
@@ -291,6 +306,15 @@ fieldset img {
   flex-flow: column nowrap;
   justify-content: center;
   /* font-size: 1.5em; */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.items fieldset:not(.active) {
+  position: absolute;
+  top: +10000;
+  left: +100000;
+  visibility: hidden;
 }
 
 .items h2 {
