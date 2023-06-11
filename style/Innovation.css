@@ -77,9 +77,60 @@ box-shadow: 2px rgba(207, 143, 219, 0.507);
   height: 500px;
   border-radius: 30px;
   background: lightgrey;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  box-shadow: rgba(110, 74, 134, 0.377) 0px 30px 50px -12px inset, rgba(123, 94, 136, 0.3) 0px 18px 26px -18px inset;
   margin: 100px;
   align-items: center;
   margin-left: 250px;
   
+}
+
+.new{
+  display: flex;
+  background: linear-gradient(to bottom, #f6b0ff9a, #bf71ff9f);
+height: 400px;
+margin: 30px;
+margin-top: 40px;
+padding-left: 20px;
+text-align: center;
+
+flex-direction: column;
+
+}
+label{
+  margin: 30px;
+  font-size: 30px;
+}
+
+
+
+
+
+.new:nth-child(odd) {
+  float: left; 
+  clear: left; 
+}
+
+.new:nth-child(even) {
+  float: right; /* Float even party divs to the right */
+  clear: right; /* Clear the float to avoid overlapping */
+}
+
+.new p {
+  margin: 30px; 
+  font-size: 40;
+  font-style: oblique;
+  letter-spacing: 2px;
+ 
+  display: flex;
+}
+.imgnew{
+  height: 400px;
+  width: 300px;
+  border-radius: 6px;
+  display: flex;
+ 
+  text-align: right; 
+ padding-top:40px ;
+ 
+  margin: 30px;
 }
