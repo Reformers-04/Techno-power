@@ -1,35 +1,136 @@
-.div1{
-    text-align: center;
+.card {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  background: rgb(131, 72, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  height: fit-content;
+  width:fit-content ;
+  margin: 100px;
+align-items: center;
+margin-left: 250px;
+box-shadow: 2px rgba(207, 143, 219, 0.507);
 
 }
-
-body {
-
-    background: #ffffff;
-    color: black;
+.in-img{
+  height: 800px;
+  width: 1800px;
+  border-radius: 6px;
 }
-.header-3{
-    background:#27036b;
-    color: #FFFFFF;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    position:relative;
-    z-index: 10000;
-    text-decoration: none;
-  }
-.header-3 .navbar a{
-    color:#ffffff;
-    font-size: 2rem;
-    margin-right: 2rem;
-    text-decoration: none;
-  }
-  .page{
-   border-bottom:solid 2px rgb(213, 136, 248) ;
-  }
-  .header-3 .icons a{
-    color:#ffffff;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-  }
-  .header-3 a:hover{
-    color:var(--green);
-  }
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "WHATS NEWS";
+  color: rgb(33, 10, 116);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(213, 160, 248);
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "ABOUT THE AIRPODS";
+  font-size: 50px;
+  color: rgb(33, 10, 116);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.Icard {
+  width: 1800px;
+  height: 500px;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(110, 74, 134, 0.377) 0px 30px 50px -12px inset, rgba(123, 94, 136, 0.3) 0px 18px 26px -18px inset;
+  margin: 100px;
+  align-items: center;
+  margin-left: 250px;
+  
+}
+
+.new{
+  display: flex;
+  background: linear-gradient(to bottom, #f6b0ff9a, #bf71ff9f);
+height: 400px;
+margin: 30px;
+margin-top: 40px;
+padding-left: 20px;
+text-align: center;
+
+flex-direction: column;
+
+}
+label{
+  margin: 30px;
+  font-size: 30px;
+}
+
+
+
+
+
+.new:nth-child(odd) {
+  float: left; 
+  clear: left; 
+}
+
+.new:nth-child(even) {
+  float: right; /* Float even party divs to the right */
+  clear: right; /* Clear the float to avoid overlapping */
+}
+
+.new p {
+  margin: 30px; 
+  font-size: 40;
+  font-style: oblique;
+  letter-spacing: 2px;
+ 
+  display: flex;
+}
+.imgnew{
+  height: 400px;
+  width: 300px;
+  border-radius: 6px;
+  display: flex;
+ 
+  text-align: right; 
+ padding-top:40px ;
+ 
+  margin: 30px;
+}

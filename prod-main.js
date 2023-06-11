@@ -52,7 +52,7 @@ var swiper = new Swiper(".home-slider", {
         clickable: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     loop:true,
@@ -277,4 +277,4 @@ function updateCartUI() {
 
 
 var divElement = document.getElementById('cart-box'); 
-divElement.innerHTML = JSON.stringify(cartItem)
+divElement.innerHTML = JSON.stringify(cartItem);
