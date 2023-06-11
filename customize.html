@@ -17,45 +17,24 @@
 
 <body>
 
-
-
   <header>
     <div class="header-3" style="background-color: #0C134F;">
-      <a href="#" class="logo"> <img src="ass/logo.png"> </a>
-
+      <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
       <div id="menu-bar" class="fas fa-bars"></div>
       <nav class="navbar">
-        <a href="#">Home</a></li>
-        <a href="tech.html">Tech-innovation</a>
-        <a href="customize.html" class="page">Customization</a>
+        <a href="hompage.html">Home</a></li>
+        <a href="Innovation.html">Tech-innovation</a>
+        <a href="customize.html" class="Page">Cutomization</a>
         <a href="catalog.html">Product Catalog</a>
-        <a href="about.html">About Us</a>
+        <a href="About.html">About Us</a>
       </nav>
-
-      <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
+      <button id="mode-toggle" class="btn"> <img src=":duck: icon _Brightness contrast_.png"
           style="height: 30px; width: 30px; display: flex; "> </button>
       </button>
-      <div class="cart-box">
-        <div class="cart-icon">
-          <i class="fas fa-cart-arrow-down fa-2x"></i>
-        </div>
-        <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
-          <h2>Shopping Bag</h2>
-          <div class="cart-wrapper">
-
-          </div>
-
-
-          <div class="subtotal"></div>
-          <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a>
-          </div>
-
-        </div>
+      <div class="icons">
+        <a href="#" class="fas fa-shopping-cart"></a>
       </div>
-
     </div>
-    </div>
-
   </header>
 
 
@@ -76,7 +55,7 @@
             <div>Sticker-Pc<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
             <div>Mouse-pad<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
             <div>SSD-256 GB<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
-            <button>Cancel All</button>
+            <button class="cancel">Cancel All</button>
           </div>
           <br>
           <h2>Price (JD)</h2>
@@ -103,15 +82,18 @@
                 <option>Samsung S15</option>
               </optgroup>
             </select>
-            <div>
+            <div class="check-div">
               <input type="checkbox" id="add-ssd">
               <label for="add-ssd">additional SSD</label>
             </div>
-            <div>
+
+            <div class="check-div">
               <input type="checkbox" id="warranty" selected>
               <label for="warranty">long warranty</label>
             </div>
           </div>
+
+          <br>
           <div class="Design">
             <p>Design & Color</p>
             <select>
@@ -128,13 +110,16 @@
               </optgroup>
             </select>
             <br>
-            <input type="checkbox" id="modern-design">
-            <label for="modern-design">modern design</label>
+            <div class="check-div">
+              <input type="checkbox" id="modern-design">
+              <label for="modern-design">modern design</label>
+            </div>
+            <div class="check-div">
+              <input type="checkbox" id="sticker" selected>
+              <label for="sticker">stickers</label>
+            </div>
           </div>
-          <div>
-            <input type="checkbox" id="sticker" selected>
-            <label for="sticker">stickers</label>
-          </div>
+          <br>
           <div class="Software">
             <p>Software</p>
             <select>
@@ -151,12 +136,14 @@
                 <option>Basic Programs for PC</option>
               </optgroup>
             </select>
-            <input type="checkbox" id="pre-design">
-            <label for="pre-design">pre-installed Designers soft.</label>
-          </div>
-          <div>
-            <input type="checkbox" id="pre-gamers" selected>
-            <label for="pre-gamers">pre-installed Gamers soft.</label>
+            <div class="check-div">
+              <input type="checkbox" id="pre-design">
+              <label for="pre-design">pre-installed Designers soft.</label>
+            </div>
+            <div class="check-div">
+              <input type="checkbox" id="pre-gamers" selected>
+              <label for="pre-gamers">pre-installed Gamers soft.</label>
+            </div>
           </div>
           <br>
           <br>
@@ -170,7 +157,7 @@
             <h2> Silver Mac Laptop</h2>
             <p>Sleek Design and Superior Performance</p>
             <p class="price">1299 JD</p>
-            <ol>
+            <ul>
               <li>Processor: Intel Core i5 10th Gen, 1.1GHz (up to 3.5GHz with Turbo Boost)</li>
               <li>RAM: 8GB LPDDR4X memory</li>
               <li>Storage: 256GB PCIe-based SSD storage</li>
@@ -180,11 +167,15 @@
               <li>Operating System: macOS Monterey</li>
               <li>Color: Silver</li>
               <li>Weight: 2.8 pounds (1.29 kilograms)</li>
-            </ol>
-            <button>Buy it</button>
+            </ul>
+            <br>
+            <button class="buy">Buy it</button>
+            <br>
           </fieldset>
         </div>
-        <img src="./ass/Customize/slide-arrow.png" width="60vw" height="60vw">
+        <a href="#" class="image-button">
+          <img class="icon" src="./ass/Customize/slide-arrow.png" width="60vw" height="60vw">
+        </a>
       </div>
   </div>
   </div>
@@ -195,15 +186,14 @@
 
 
   <!-- footer section starts  -->
-
   <section class="footer">
-
     <div class="box-container">
-
       <div class="box">
         <h3>about us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero autem nemo amet
-          recusandae eveniet?</p>
+        <p>Techno-Power is one of the largest IT distributors in the market.Techno-Power specializes in offering a
+          complete selection of memory,
+          storage products and other hardware and software components for PCs and servers,
+          and consumer electronics</p>
       </div>
       <div class="box">
         <h3>branch locations</h3>
@@ -214,24 +204,17 @@
       </div>
       <div class="box">
         <h3>quick links</h3>
-        <a href="#">home</a>
-        <a href="#">category</a>
-        <a href="#">product</a>
-        <a href="#">deal</a>
-        <a href="#">contact</a>
+        <a href="hompage.html">home</a>
+        <a href="customize.html">category</a>
+        <a href="catalog.html">product</a>
       </div>
       <div class="box">
         <h3>follow us</h3>
-        <a href="#">facebook</a>
-        <a href="#">twitter</a>
-        <a href="#">instagram</a>
-        <a href="#">linked</a>
+        <a href="https://www.facebook.com/">facebook</a>
+        <a href="tel:+962069999999">+962 06 999 99</a>
       </div>
-
     </div>
-
     <h1 class="credit"> created by <span> Techno-Power </span> | all rights reserved! </h1>
-
   </section>
 
   <!-- footer section ends -->
@@ -261,7 +244,7 @@
     }
   </script>
 
-  <script src="main0.js"></script>
+  <script src="js/customize.js"></script>
 </body>
 
 </html>
