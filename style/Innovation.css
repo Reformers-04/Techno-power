@@ -1,35 +1,94 @@
-.div1{
+.div1 {
     text-align: center;
 
 }
 
-body {
-
-    background: #ffffff;
-    color: black;
+.card {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: rgb(131, 72, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    margin: 50px;
+    margin-left: 200px;
+    box-shadow: 2px rgba(207, 143, 219, 0.507);
+    align-items: center;
+margin-top:5%;
 }
-.header-3{
-    background:#27036b;
-    color: #FFFFFF;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    position:relative;
-    z-index: 10000;
-    text-decoration: none;
-  }
-.header-3 .navbar a{
-    color:#ffffff;
-    font-size: 2rem;
-    margin-right: 2rem;
-    text-decoration: none;
-  }
-  .page{
-   border-bottom:solid 2px rgb(213, 136, 248) ;
-  }
-  .header-3 .icons a{
-    color:#ffffff;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-  }
-  .header-3 a:hover{
-    color:var(--green);
-  }
+
+.in-img {
+    height: 300px;
+    width: 500px;
+    border-radius: 6px;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    content: "Latest News ";
+    color: rgb(33, 10, 116);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(213, 160, 248);
+    transition: all 0.5s;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card:hover:after {
+    content: "Technological change has the potential to create shared prosperity and smart solutions to the world’s biggest challenges. At the same time, its exponential pace risks overwhelming existing institutions, leaving us exposed to uncontrolled risks. Geopolitical crises, rising polarization and a looming climate crisis are compounding this danger.There is an urgent need for leaders to seize the opportunity to direct technology towards positive ends. Here are five developments that they should be prepared for in the year ahead.";
+    font-size: 20px;
+    color: rgb(33, 10, 116);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3%;
+}
+
+
+
+
+.Icard {
+    text-align: center;
+    width: 600px;
+    height: 430px;
+    border-radius: 30px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    align-items: center;
+    margin: 50px;
+    margin-left : 300px;
+    color: rgb(33, 10, 116);
+    padding: 3%;
+}
