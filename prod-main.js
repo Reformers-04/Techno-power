@@ -276,5 +276,14 @@ function updateCartUI() {
 
 
 
-var divElement = document.getElementById('cart-box'); 
+var divElement = document.getElementsByid('cart-box'); 
 divElement.innerHTML = JSON.stringify(cartItem);
+
+
+
+
+
+
+
+
+
