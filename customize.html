@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customize Page</title>
 
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,600;0,800;1,300;1,900&family=Grandstander:ital,wght@0,200;0,400;1,600&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style/customize.css">
@@ -15,10 +20,10 @@
 
   <header>
     <div class="header-3" style="background-color: #0C134F;">
-      <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
+      <a href="hompage.html" class="logo"> <img src="./assets/logo.png"> </a>
       <div id="menu-bar" class="fas fa-bars"></div>
       <nav class="navbar">
-        <a href="#">Home</a></li>
+        <a href="hompage.html">Home</a></li>
         <a href="Innovation.html">Tech-innovation</a>
         <a href="customize.html" class="page">Customization</a>
         <a href="catalog.html">Product Catalog</a>
@@ -55,8 +60,12 @@
           </div>
           <br>
           <h2>Price (JD)</h2>
-          <input class="range" type="range" min="10" max="10000" step="10" value="1500"
-            onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+          <div class="rangeparents">
+            <input id="stepsall" class="range" type="range" min="50" max="10000" step="50" value="1500">
+            <div id="valueDisplay"></div>
+          </div>
+          <div id="min-maxDisplay"></div>
+
           <br>
           <div class="hardware">
             <p>Hardware Specification</p>
@@ -164,7 +173,7 @@
               <li>Weight: 2.8 pounds (1.29 kilograms)</li>
             </ul>
             <br>
-            <button class="buy">Buy it</button>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
             <br>
           </fieldset>
 
@@ -186,12 +195,75 @@
               <li>Weight: 2.8 pounds (1.29 kilograms)</li>
             </ul>
             <br>
-            <button class="buy">Buy it</button>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
+            <br>
+          </fieldset>
+          <fieldset class="card3">
+            <!-- Content for Card 3 -->
+            <img src="./ass/Customize/laptop-Blue.png">
+            <h2>Blue Mac Laptop</h2>
+            <p>Bold and Expressive for Designers and Artists</p>
+            <p class="price">1399 JD</p>
+            <ul>
+              <li>Processor: Intel Core i5 11th Gen, 2.4GHz (up to 4.2GHz with Turbo Boost)</li>
+              <li>RAM: 16GB LPDDR4X memory</li>
+              <li>Storage: 512GB PCIe-based SSD storage</li>
+              <li>Graphics: Intel Iris Xe Graphics</li>
+              <li>Screen Size: 14-inch Retina Display</li>
+              <li>Connectivity: Two Thunderbolt/USB 4 ports, 3.5mm headphone jack, Bluetooth 5.2, Wi-Fi 6</li>
+              <li>Operating System: macOS Monterey</li>
+              <li>Color: Blue</li>
+              <li>Weight: 2.99 pounds (1.36 kilograms)</li>
+            </ul>
+            <br>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
+            <br>
+          </fieldset>
+          <fieldset class="card4">
+            <!-- Content for Card 4 -->
+            <img src="./ass/Customize/laptop-Black.png">
+            <h2>Black Mac Laptop</h2>
+            <p>Sleek and Stealthy for Power Users</p>
+            <p class="price">1599 JD</p>
+            <ul>
+              <li>Processor: Intel Core i7 11th Gen, 2.2GHz (up to 4.7GHz with Turbo Boost)</li>
+              <li>RAM: 16GB DDR4 memory</li>
+              <li>Storage: 1TB PCIe-based SSD storage</li>
+              <li>Graphics: AMD Radeon Pro 5500M with 4GB of GDDR6 memory</li>
+              <li>Screen Size: 16-inch Retina Display</li>
+              <li>Connectivity: Four Thunderbolt 3 (USB-C) ports, 3.5mm headphone jack, Bluetooth 5.0, Wi-Fi 6</li>
+              <li>Operating System: macOS Monterey</li>
+              <li>Color: Black</li>
+              <li>Weight: 4.3 pounds (1.95 kilograms)</li>
+            </ul>
+            <br>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
+            <br>
+          </fieldset>
+          <fieldset class="card5">
+            <!-- Content for Card 5 -->
+            <img src="./ass/Customize/laptop-Red.png">
+            <h2>Red Mac Laptop</h2>
+            <p>Bold and Eye-catching for Tech Enthusiasts</p>
+            <p class="price">1449 JD</p>
+            <ul>
+              <li>Processor: Apple M1 chip with 8-core CPU and 8-core GPU</li>
+              <li>RAM: 16GB unified memory</li>
+              <li>Storage: 512GB PCIe-based SSD storage</li>
+              <li>Graphics: 8-core Apple GPU</li>
+              <li>Screen Size: 13.3-inch Retina Display</li>
+              <li>Connectivity: Two Thunderbolt/USB 4 ports, 3.5mm headphone jack, Bluetooth 5.0, Wi-Fi 6</li>
+              <li>Operating System: macOS Monterey</li>
+              <li>Color: Red</li>
+              <li>Weight: 2.8 pounds (1.29 kilograms)</li>
+            </ul>
+            <br>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
             <br>
           </fieldset>
 
-          <fieldset class="card3">
-            <!-- Content for Card 3 -->
+          <fieldset class="card6">
+            <!-- Content for Card 6 -->
             <img src="./ass/Customize/laptop-Space-Gray.png">
             <h2>Space Gray Mac Laptop</h2>
             <p>Sleek and Powerful for Professionals</p>
@@ -208,7 +280,7 @@
               <li>Weight: 2.8 pounds (1.29 kilograms)</li>
             </ul>
             <br>
-            <button class="buy">Buy it</button>
+            <button class="buy" onclick="window.location.href='./payment1.html'">Buy it</button>
             <br>
           </fieldset>
         </div>
@@ -298,8 +370,8 @@
 
     submitButton.addEventListener("click", function () {
       const selectedOptions = [];
-
       const selectedElements = document.querySelectorAll(".selected div");
+
       selectedElements.forEach(function (element) {
         const text = element.textContent.trim();
         if (text !== "") {
@@ -326,24 +398,12 @@
       const hasPreInstalledGamersSoft = document.getElementById("pre-gamers").checked;
 
       const output = `
-      <div class="selected">
-
-      <h3> Selected </h3> <br>
-      
-
-       <div>${selectedHardware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)"> <br>
-       <div>${selectedDesign}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)"> <br>
-       <div>${selectedSoftware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)">
-
-       </div>
-      
-      
-       
-
-    `;
+    <div class="selected">
+      <h3>Selected</h3> <br>
+      <div>${selectedHardware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div><br>
+      <div>${selectedDesign}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div><br>
+      <div>${selectedSoftware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div>
+    </div>`;
 
       selectedDiv.innerHTML = output;
     });
@@ -361,13 +421,32 @@
     function deleteOption(element) {
       const optionDiv = element.parentNode;
       optionDiv.parentNode.removeChild(optionDiv);
-
-
-      const outputDiv = document.createElement('div');
-      outputDiv.classList.add('output-div'); // Add the CSS class to the output div
-      outputDiv.innerHTML = output;
-      selectedDiv.appendChild(outputDiv);
     }
+
+
+
+    // range script
+
+    // Get the range input element and value display element
+    const rangeInput = document.getElementById('stepsall');
+    const valueDisplay = document.getElementById('valueDisplay');
+    const minmaxDisplay = document.getElementById('min-maxDisplay');
+
+    // Get the minimum and maximum values
+    const minValue = rangeInput.min;
+    const maxValue = rangeInput.max;
+
+    // Update the value display when the range input value changes
+    rangeInput.addEventListener('input', function () {
+      const currentValue = rangeInput.value;
+      valueDisplay.textContent = ` ${currentValue} JD`;
+      // minmaxDisplay.textContent = ` Min: ${minValue} JD Max: ${maxValue} JD`;
+    });
+
+    // Set the initial value display
+    valueDisplay.textContent = ` ${rangeInput.value} JD`;
+    // minmaxDisplay.textContent = ` <pre>${minValue} JD           ${maxValue} JD </pre>`;
+
   </script>
   <!-- <script src="./js/customize.js"></script> -->
 </body>
