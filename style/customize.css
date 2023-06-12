@@ -216,7 +216,7 @@ input[type="checkbox"]:disabled {
 
 .rangeparents {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .range {
@@ -986,10 +986,11 @@ h2 {
   --bg-color: white;
   --text-color: black;
   --green: #7555b9;
+
 }
 
 body {
-  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
