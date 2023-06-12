@@ -19,9 +19,10 @@ box-shadow: 2px rgba(207, 143, 219, 0.507);
 
 }
 .in-img{
-  height: 800px;
-  width: 1800px;
+  height: 500px;
+  width: 1300px;
   border-radius: 6px;
+  text-align: center;
 }
 
 .card::before,
@@ -69,29 +70,36 @@ box-shadow: 2px rgba(207, 143, 219, 0.507);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+.card1:hover:after {
+  content: "ABOUT THE ELECTRONIC";
+  font-size: 50px;
+  color: rgb(33, 10, 116);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 .Icard {
-  width: 1800px;
   height: 500px;
+  width: 1300px;
   border-radius: 30px;
-  background: lightgrey;
-  box-shadow: rgba(110, 74, 134, 0.377) 0px 30px 50px -12px inset, rgba(123, 94, 136, 0.3) 0px 18px 26px -18px inset;
+  background: rgb(245, 239, 239);
+ border: 1px solid rgb(76, 79, 82);
   margin: 100px;
   align-items: center;
   margin-left: 250px;
+  align-items: center;
   
 }
 
 .new{
   display: flex;
-  background: linear-gradient(to bottom, #f6b0ff9a, #bf71ff9f);
-height: 400px;
+  background: linear-gradient(to bottom, #f6b0ff67, #bf71ff65);
+height: 80%;
+width: 50%;
 margin: 30px;
 margin-top: 40px;
 padding-left: 20px;
-text-align: center;
+text-align: left;
 
 flex-direction: column;
 
@@ -124,13 +132,11 @@ label{
   display: flex;
 }
 .imgnew{
-  height: 400px;
-  width: 300px;
+  height:80%;
+  width: 30%;
   border-radius: 6px;
   display: flex;
- 
   text-align: right; 
- padding-top:40px ;
- 
-  margin: 30px;
+
+  margin: 40px;
 }
