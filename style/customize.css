@@ -211,6 +211,7 @@ input[type="checkbox"]:disabled {
   color: white;
   border-radius: 25px;
   align-items: center;
+
 }
 
 .range {
@@ -397,6 +398,7 @@ fieldset img {
 .footer {
   background-color: #0C134F;
   color: white;
+  text-transform: capitalize;
 }
 
 .footer .box-container {
@@ -425,6 +427,7 @@ fieldset img {
   display: block;
   color: #fffdfd;
   font-size: 1.5rem;
+  text-decoration: none;
   padding: 2rem;
 }
 
