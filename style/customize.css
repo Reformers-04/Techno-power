@@ -73,6 +73,11 @@ main {
 
 }
 
+.centeralized {
+  scale: 85% 100%;
+  margin-top: 0;
+}
+
 .customize {
   display: flex;
   flex-flow: column nowrap;
