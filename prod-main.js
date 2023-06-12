@@ -59,8 +59,6 @@ var swiper = new Swiper(".home-slider", {
 });
 
 
-
-
 class CartItem{
     constructor(name, desc, img, price){
         this.name = name
@@ -129,7 +127,7 @@ class LocalCart{
 
 const cartIcon = document.querySelector('.fa-cart-arrow-down')
 const wholeCartWindow = document.querySelector('.whole-cart-window')
-wholeCartWindow.inWindow = 0
+wholeCartWindow.inWindow =0
 const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
 addToCartBtns.forEach( (btn)=>{
     btn.addEventListener('click', addItemFunction)
@@ -285,5 +283,28 @@ divElement.innerHTML = JSON.stringify(cartItem);
 
 
 
+    // استرداد العناصر الموجودة في السلة
+    const items = LocalCart.getLocalCartItems();
 
+    // العنصر المستهدف لعرض البيانات
+    const cartBox = document.getElementById("cart-box");
+
+    // عرض البيانات في العنصر
+    for (const [key, value] of items.entries()) {
+      const cartItem = document.createElement("div");
+      cartItem.classList.add("cart-item");
+      let price = value.price * value.quantity;
+      price = Math.round(price * 100) / 100;
+      cartItem.innerHTML = `
+        <img src="${value.img}"> 
+        <div class="details">
+          <h3>${value.name}</h3>
+          <p>${value.desc}
+            <span class="quantity">الكمية: ${value.quantity}</span>
+            <span class="price">السعر: $ ${price}</span>
+          </p>
+        </div>
+      `;
+      cartBox.appendChild(cartItem);
+    }
 

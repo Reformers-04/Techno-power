@@ -14,6 +14,7 @@
 
 
     <link rel="stylesheet" href="./style/home.css">
+   
 
 </head>
 
@@ -46,11 +47,22 @@
 
 
     
-   
-        <div class="cart-wrapper" id="cart-box">
-
+    <div class="cart-box" >
+        <div class="cart-icon">
+            <i class="fas fa-cart-arrow-down fa-2x"></i>
         </div>
-        
+        <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
+            <h2>Your Bag</h2>
+            <div class="cart-wrapper"id="cart-box">
+
+            </div>
+            
+            
+            <div class="subtotal"></div>
+            <div class="checkout cheack"><a href="#" style="text-decoration: none; color: aliceblue;">complete pay</a></div>
+            
+        </div>
+    </div>   
         
             
             
@@ -142,13 +154,13 @@
             </p>
 
         </div>
-        <button class="btn">
+        <a class="cheack">
             Pay now
-        </button>
+        </a>
         <br>
-        <button class="btn">
+        <a class="cheack" style="margin-top: 0;">
             Cancel
-        </button>
+        </a>
 
     </div>
 
@@ -212,6 +224,14 @@
 
 
     <script src="prod-main.js"></script>
+    <script src="fscript.js"></script>
+    <script>
+        // استرداد البيانات من العنصر النصي في الصفحة السابقة
+        var jsonData = JSON.parse(document.currentScript.innerText);
+    
+        // عرض البيانات في العنصر
+        document.getElementById("cart-box").innerText = JSON.stringify(cartItem);
+      </script>
 
 </body>
 
