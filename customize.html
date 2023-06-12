@@ -55,8 +55,12 @@
           </div>
           <br>
           <h2>Price (JD)</h2>
-          <input class="range" type="range" min="10" max="10000" step="10" value="1500"
-            onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+          <div class="rangeparents">
+            <input id="stepsall" class="range" type="range" min="50" max="10000" step="50" value="1500">
+            <div id="valueDisplay"></div>
+          </div>
+          <div id="min-maxDisplay"></div>
+
           <br>
           <div class="hardware">
             <p>Hardware Specification</p>
@@ -431,6 +435,30 @@
       outputDiv.innerHTML = output;
       selectedDiv.appendChild(outputDiv);
     }
+
+
+    // range script
+
+    // Get the range input element and value display element
+    const rangeInput = document.getElementById('stepsall');
+    const valueDisplay = document.getElementById('valueDisplay');
+    const minmaxDisplay = document.getElementById('min-maxDisplay');
+
+    // Get the minimum and maximum values
+    const minValue = rangeInput.min;
+    const maxValue = rangeInput.max;
+
+    // Update the value display when the range input value changes
+    rangeInput.addEventListener('input', function () {
+      const currentValue = rangeInput.value;
+      valueDisplay.textContent = ` ${currentValue} JD`;
+      // minmaxDisplay.textContent = ` Min: ${minValue} JD Max: ${maxValue} JD`;
+    });
+
+    // Set the initial value display
+    valueDisplay.textContent = ` ${rangeInput.value} JD`;
+    // minmaxDisplay.textContent = ` <pre>${minValue} JD           ${maxValue} JD </pre>`;
+
   </script>
   <!-- <script src="./js/customize.js"></script> -->
 </body>
