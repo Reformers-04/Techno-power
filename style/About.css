@@ -9,47 +9,46 @@
 
 .img-deg {
     float: right;
-border-radius: 4%;
-padding-right: 1.5%;
+    border-radius: 4%;
+    padding-right: 2%;
 
 }
 
 .img-degg {
     float: left;
-border-radius: 4%;
-padding-right: 1.5%;
+    border-radius: 4%;
+    padding-right: 2%;
 }
 
 .first-div {
-
-    
     background-color: #D4ADFC;
     width: 70%;
     left: 15%;
-    top: 35%;
+    top: 20%;
     padding: 1%;
     position: absolute;
     text-align: center;
-  border-radius: 4%;
+    border-radius: 4%;
+    font-size: large;
 }
 
 .second-div {
-  
+
     background-color: #D4ADFC;
     width: 70%;
     left: 15%;
     height: 49%;
     padding: 1%;
-    top: 100%;
+    top: 80%;
     position: absolute;
     text-align: center;
     border-radius: 4%;
-
+    font-size: large;
 }
 
 .team {
     text-align: center;
-    margin-top: 70%;
+    margin-top: 59%;
 }
 
 body {
@@ -123,149 +122,171 @@ img {
     transform: translateX(0%);
 }
 
-.card{
+.card {
     display: inline;
 
 }
-.first{
+
+.first {
     display: inline-flex;
+
+    margin-left: 23%;
+    font-size: large;
+
+
     padding-left: 25.5%;
     
+
 }
-.second{
+
+.second {
     display: inline-flex;
+
+    margin-left: 23%;
+    font-size: large;
+
     margin-left: 25.5%;
+
 }
 
 :root {
     --bg-color: white;
     --text-color: black;
-    --green:#7555b9;
-  }
-  
-  body {
+    --green: #7555b9;
+}
+
+body {
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-  }
-  
-  .dark-mode {
+}
+
+.dark-mode {
     --bg-color: #222222;
     --text-color: white;
-  }
-  
-  .header-3{
+}
+
+.header-3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:2rem 9%;
-    background:var(--green);
-  }
-  
-  .header-3{
-    background:#27036b;
+    padding: 0.3rem;
+    background: var(--green);
+}
+
+.header-3 {
+    background: #27036b;
     color: #ffffff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     position: relative;
-   z-index: 10000;
-   
-  }
- 
-  .header-3 .navbar a{
-    color:#ffffff;
+    z-index: 10000;
+
+}
+
+.header-3 .navbar a {
+    color: #ffffff;
     font-size: 1.4rem;
     margin-right: 2rem;
     text-decoration: none;
-  }
-  
-  .header-3 .icons a{
-    color:#ffffff;
+}
+
+.header-3 .icons a {
+    color: #ffffff;
     font-size: 2.5rem;
     margin-left: 2rem;
     text-decoration: none;
-  }
-  
-  .header-3 a:hover{
-    color:var(--green);
-  }
-  
-  #menu-bar{
+}
+
+.header-3 a:hover {
+    color: var(--green);
+}
+
+#menu-bar {
     font-size: 3rem;
-    color:#666;
-    border:.1rem solid #666;
+    color: #666;
+    border: .1rem solid #666;
     border-radius: .5rem;
-    padding:.5rem 1.5rem;
+    padding: .5rem 1.5rem;
     cursor: pointer;
     display: none;
-  }
-  
-  .header-3.active{
-    top:0; left: 0; right: 0;
-  }
+}
+
+.header-3.active {
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 
-  .header-3 .icons a{
-    color:#ffffff;
+.header-3 .icons a {
+    color: #ffffff;
     font-size: 1.5rem;
     margin-left: 1rem;
-  }
-  
+}
 
-  .footer {
+
+.footer {
     font-family: 'Roboto', 'Segoe UI', sans-serif;
     background-color: #0C134F;
     color: white;
-    padding-left: 10px; 
+    padding-left: 5px;
     margin-top: 100px;
-  }
-  
-  .footer .box-container {
+    text-align: center;
+}
+
+.footer .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-  
-  .footer .box-container .box {
-    padding : 0.7rem;
-    flex: 1 1 20rem;
-   
-  }
-  
-  .footer .box-container .box h3 {
+    text-align: center;
+}
+
+.footer .box-container .box {
+    padding: 0.4rem;
+    flex: 20rem;
+    text-align: center;
+
+}
+
+.footer .box-container .box h3 {
     color: #faf5f5;
     font-size: 1.5rem;
-    padding: 1rem;
-  }
-  
-  .footer .box-container .box p {
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.footer .box-container .box p {
     color: #fffafa;
     font-size: 1rem;
-    padding: 1rem;
-  }
-  
-  .footer .box-container .box a {
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.footer .box-container .box a {
     font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-align: center;
     display: block;
     color: #fffdfd;
     font-size: 1rem;
-    padding: .5rem;
-  }
-  
-  .footer .box-container .box a:hover {
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box a:hover {
     text-decoration: underline;
     color: var(--green);
-  }
-  
-  .footer .credit {
+}
+
+.footer .credit {
     font-size: 1rem;
-    padding: 1rem 1rem;
+    padding: 0.4rem;
     margin-top: 1.5rem;
     border-top: .1rem solid rgba(0, 0, 0, .1);
     text-align: center;
     font-weight: normal;
-  }
-  
-  .footer .credit span {
+    padding-left: 5px;
+}
+
+.footer .credit span {
     color: var(--green);
-  }
-  
+}
