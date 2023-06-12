@@ -5,105 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment1</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    
-  <link rel="stylesheet" href="./style/payment1.css">
+    <link rel="stylesheet" type="text/css" href="./style/Innovation.css">
+    <link rel="stylesheet" href="./style/payment1.css">
 
 </head>
-<body>
-    <header>
+  <header>
 
-  
+    <div class="header-3" style="background-color: #0C134F;">
+        <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
 
-        <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
-    
-            <div id="menu-bar" class="fas fa-bars"></div>
-            <nav class="navbar">
-               
-                <a href="#">Home</a></li>
-                    <a href="tech.html">Tech-innovation</a> 
-                   <a href="customize.html">Cutomization</a>
-                   <a href="catalog.html">Product Catalog</a>
-                    <a href="about.html">About Us</a> 
-                   
-            </nav>
-           
-            <button  id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png" style="height: 30px; width: 30px; display: flex; "> </button>
-            </button>
-            <div class="icons">
-               
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-               
-            </div>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+
+            <a href="hompage.html">Home</a></li>
+            <a href="Innovation.html">Tech-innovation</a>
+            <a href="customize.html">Cutomization</a>
+            <a href="catalog.html">Product Catalog</a>
+            <a href="About.html">About Us</a>
+
+        </nav>
+
+        <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
+                style="height: 30px; width: 30px; display: flex; "> </button>
+        </button>
+        <div class="icons">
+
+            <a href="#" class="fas fa-shopping-cart"></a>
+
         </div>
-    
-    </header>
-    
-    <div class="container">
-        <div class="shipping-details">
-          <h2>Shipping Details</h2>
-          <form>
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name"><br><br>
-            
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name"><br><br>
-            
-            <label for="address1">Address 1:</label>
-            <input type="text" id="address1" name="address1"><br><br>
-            
-            <label for="address2">Address 2:</label>
-            <input type="text" id="address2" name="address2"><br><br>
-            
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country"><br><br>
-            
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city"><br><br>
-            
-            <label for="zip-code">Zip Code:</label>
-            <input type="text" id="zip-code" name="zip-code"><br><br>
-            
-            <label for="phone-number">Phone Number:</label>
-            <input type="text" id="phone-number" name="phone-number"><br><br>
-            
-            <label for="shipping-option">Shipping Option:</label><br>
-            <input type="radio" id="free-shipping" name="shipping-option" value="free-shipping">
-            <label for="free-shipping">Free Shipping</label><br>
-            <input type="radio" id="next-day-delivery" name="shipping-option" value="next-day-delivery">
-            <label for="next-day-delivery">Next Day Delivery - $20</label><br><br>
-            
-            <input type="submit" value="Complete Order">
-            <input type="button" value="Cancel">
-          </form>
-        </div>
-        
-        <div class="payment-options">
-          <h2>Payment Options</h2>
-          <!-- Include your payment options here, such as credit card form, PayPal button, etc. -->
-        </div>
+    </div>
+
+</header>
+<div class="container">
+  <div class="shipping-form">
+    <h2>Shipping Details</h2>
+    <form>
+      <input type="text" placeholder="First Name" required><br>
+      <input type="text" placeholder="Last Name" required><br>
+      <input type="text" placeholder="Address Line 1" required><br>
+      <input type="text" placeholder="Address Line 2"><br>
+      <input type="text" placeholder="Country" required><br>
+      <input type="text" placeholder="City" required><br>
+      <input type="text" placeholder="Zip Code" required><br>
+      <input type="text" placeholder="Phone Number" required><br>
+      <p>Shipping Options:</p>
+      <label>
+        <input type="radio" name="shipping" value="free"> Free Shipping
+      </label><br>
+      <label>
+        <input type="radio" name="shipping" value="next-day"> Next Day Delivery - $20
+      </label><br>
+      <div class="buttons">
+        <input type="submit" value="Complete Order">
+        <input type="reset" value="Cancel Order">
       </div>
-      
-      <div class="summary">
-        <h2>Summary</h2>
-        <p>
-          <strong>PRODUCT NAME</strong>: $X.XX<br>
-          <img src="product-image.jpg" alt="Product Image"><br>
-          <a href="#">Name a Voucher?</a><br><br>
-          
-          <strong>SUBTOTAL:</strong> $X.XX<br>
-          <strong>SHIPPING:</strong> $X.XX<br>
-          <strong>TAXES:</strong> $X.XX<br>
-          <strong>TOTAL:</strong> $X.XX<br>
-        </p>
-      </div>
+    </form>
+  </div>
+  <div class="summary">
+    <h2>Order Summary</h2>
+    <img src="./ass/pic8.jpg" alt="Product Image" width="200"><br>
+    <p>Product Name: Example Product</p>
+    <p>Price: $99.99</p>
+  </div>
+</div>
+</body>
 
     
     <!-- contact section ends -->
@@ -143,7 +108,7 @@
     
         </div>
     
-        <h1 class="credit"> created by <span> mr. web designer </span> | all rights reserved! </h1>
+        <h1 class="credit"> created by <span> reformers </span> | all rights reserved! </h1>
         
     </section>
     
@@ -156,12 +121,5 @@
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
-    
-    
-    
-    
-    
-    
       <script src="main1.js"></script>
-    </body>
     </html>
