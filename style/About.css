@@ -129,12 +129,12 @@ img {
 }
 .first{
     display: inline-flex;
-    margin-left: 20%;
+    padding-left: 25.5%;
     
 }
 .second{
     display: inline-flex;
-    margin-left: 20%;
+    margin-left: 25.5%;
 }
 
 :root {
