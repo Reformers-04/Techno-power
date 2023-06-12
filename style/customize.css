@@ -989,6 +989,11 @@ h2 {
 
 }
 
+* {
+  font-family: 'Asap Condensed', sans-serif;
+
+}
+
 body {
   font-family: 'Asap Condensed', sans-serif;
   background-color: var(--bg-color);
