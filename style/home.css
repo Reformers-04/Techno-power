@@ -201,7 +201,7 @@
   
   .home{
     padding-top: 0;
-   
+  
 
   }
   
@@ -239,6 +239,23 @@
     font-size: 6rem;
     color:#ffffff;
     padding:.5rem 0;
+  }
+  .home-slider {
+    width: 100%; 
+    height: 40%; 
+  }
+ 
+  
+  .swiper-slide {
+    width: 100%; 
+    height: 40%; 
+  }
+  
+  .box {
+    width: 100%; 
+    height: 40%; 
+    background-size: cover;
+    background-position: center;
   }
   
   .banner-container{
@@ -298,14 +315,14 @@
   .category .box-container .box{
     position: relative;
     flex:1 1 23rem;
-    height: 35rem;
+    height: 20rem;
     overflow: hidden;
     border:.1rem solid rgba(0,0,0,.3);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   }
   
   .category .box-container .box img{
-    height: 100%;
+    height: 40%;
     width:100%;
     object-fit: cover;
   }
@@ -956,7 +973,7 @@ button {
           width:95%;
           text-align: center;
           cursor: pointer;
-          background-color: rgb(189, 117, 223);
+          background-color: rgb(220, 156, 250);
           font-size: large;
           color: #fff;
           margin:10px auto;
@@ -1006,7 +1023,7 @@ button {
        } 
       
        .fa-window-close{
-           color: rgb(126, 42, 165);
+           color: rgb(152, 70, 160);
        }
        .cancel{
            text-align: right;
@@ -1034,7 +1051,7 @@ button {
         position: relative;
         top:-20px;
         right:20%;
-        background-color: rgb(212, 0, 255);
+        background-color: rgb(243, 185, 255);
         border-radius: 50%;
       }
       
@@ -1051,9 +1068,9 @@ button {
           height:700px;
           justify-content: center;
           align-items: center;
-          border: solid 2px rgb(107, 74, 185);
+          border:  #3d3d3d 1px solid;
           margin: 5rem;
-          background: linear-gradient(to bottom, #d875d0, #7f27e4);
+          background: whitesmoke;
           border-radius: 20px;
           font-size: 20px;
       }
@@ -1061,10 +1078,11 @@ button {
           width:100%;
           margin-top: 0;
           border-radius: 20px;
+          border: #3d3d3d 1px solid;
       }
       .card-item .details{
           text-align: center; 
-          color: #ddd;
+          color: #0e0042;
       }
       .img{
         height: 30050px;
@@ -1093,6 +1111,7 @@ button {
           padding-right: 3px;
           border-radius: 6px;
           font-weight: 400;
+          margin-top: 0;
       }
       .about{
         width: fit-content;
@@ -1118,6 +1137,7 @@ button {
           font-weight: 700;
           padding: 30px;
           text-align: center;
+          color: #e696ff;
 
         }
 
@@ -1149,7 +1169,7 @@ button {
       margin-top: 20px;
     }
     .payparg{
-      background-color:rgb(234, 218, 250) ;
+      background-color:rgba(239, 227, 252, 0.5) ;
       border-radius: 4px;
       border: solid #27174d 2px;
       margin: 5px;
@@ -1204,6 +1224,7 @@ button {
         margin-bottom: 20px;
         font-size: 18px;
         transition: 0.5s;
+        border-radius: 4px;
     }
     
     a:hover{

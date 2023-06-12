@@ -48,7 +48,7 @@
 
     
     <div class="cart-box" >
-        <div class="cart-icon">
+        <div class="cart-icon" >
             <i class="fas fa-cart-arrow-down fa-2x"></i>
         </div>
         <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
@@ -133,9 +133,9 @@
         </div>
         <a class="cheack">Confirm</a>
         <hr>
-        <div class="payparg">
+        <div class="payparg" style="border-radius: 7px;">
 
-            <div class="cb">
+            <div class="cb" style="padding:10px;">
                 <input type="checkbox" id="cbx2" style="display: none;">
                 <label for="cbx2" class="check">
                     <svg width="18px" height="18px" viewBox="0 0 18 18">
@@ -147,7 +147,7 @@
                 </label>
             </div>
 
-            <p>lorem Libero perferendis
+            <p style="padding-right: 5px;">lorem Libero perferendis
                 quae neque perspiciatis. Officiis dolores maxime possimus quidem non minima, tenetur, illum, ad
                 consectetur cupiditate odit nulla blanditiis ab.
                 <img class="pimg" src="pp.png" alt="">
@@ -226,10 +226,10 @@
     <script src="prod-main.js"></script>
     <script src="fscript.js"></script>
     <script>
-        // استرداد البيانات من العنصر النصي في الصفحة السابقة
+       
         var jsonData = JSON.parse(document.currentScript.innerText);
     
-        // عرض البيانات في العنصر
+      
         document.getElementById("cart-box").innerText = JSON.stringify(cartItem);
       </script>
 
