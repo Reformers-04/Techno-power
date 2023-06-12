@@ -46,10 +46,11 @@
         <div class="customize">
           <div class="selected">
             <h3>Selected</h3>
-            <div>Acer-Laptop<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
-            <div>Sticker-Pc<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
+            <div>Mac- Laptop<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
+                onclick="deleteOption(this)"></div>
+            <!-- <div>Sticker-Pc<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
             <div>Mouse-pad<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
-            <div>SSD-256 GB<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div>
+            <div>SSD-256 GB<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"></div> -->
             <button class="cancel">Cancel All</button>
           </div>
           <br>
@@ -141,7 +142,7 @@
           </div>
           <br>
           <br>
-          <input type="submit">
+          <input type="submit" id="submit-button">
         </div>
         <br>
 
@@ -281,10 +282,93 @@
 
     // Add initial active class to the first card
     cards[currentCardIndex].classList.add('active');
-  </script>
+
+    function deleteOption(element) {
+      const optionDiv = element.parentNode;
+      optionDiv.parentNode.removeChild(optionDiv);
+    }
 
   </script>
 
+
+  <script>
+    const submitButton = document.getElementById("submit-button");
+    const selectedDiv = document.querySelector(".selected");
+    let cancelAllButton = document.querySelector(".selected .cancel");
+
+    submitButton.addEventListener("click", function () {
+      const selectedOptions = [];
+
+      const selectedElements = document.querySelectorAll(".selected div");
+      selectedElements.forEach(function (element) {
+        const text = element.textContent.trim();
+        if (text !== "") {
+          selectedOptions.push(text);
+        }
+      });
+
+      const rangeValue = document.querySelector(".range").value;
+
+      const hardwareSelect = document.getElementById("hardware-select");
+      const selectedHardware = hardwareSelect.options[hardwareSelect.selectedIndex].text;
+
+      const designSelect = document.getElementById("design-select");
+      const selectedDesign = designSelect.options[designSelect.selectedIndex].text;
+
+      const softwareSelect = document.getElementById("software-select");
+      const selectedSoftware = softwareSelect.options[softwareSelect.selectedIndex].text;
+
+      const addSSD = document.getElementById("add-ssd").checked;
+      const hasWarranty = document.getElementById("warranty").checked;
+      const hasModernDesign = document.getElementById("modern-design").checked;
+      const hasStickers = document.getElementById("sticker").checked;
+      const hasPreInstalledDesignersSoft = document.getElementById("pre-design").checked;
+      const hasPreInstalledGamersSoft = document.getElementById("pre-gamers").checked;
+
+      const output = `
+      <div class="selected">
+
+      <h3> Selected </h3> <br>
+      
+
+       <div>${selectedHardware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
+                onclick="deleteOption(this)"> <br>
+       <div>${selectedDesign}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
+                onclick="deleteOption(this)"> <br>
+       <div>${selectedSoftware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
+                onclick="deleteOption(this)">
+
+       </div>
+      
+      
+       
+
+    `;
+
+      selectedDiv.innerHTML = output;
+    });
+
+    selectedDiv.addEventListener("click", function (event) {
+      if (event.target.classList.contains("cancel")) {
+        selectedDiv.innerHTML = "";
+        cancelAllButton = document.createElement("button");
+        cancelAllButton.className = "cancel";
+        cancelAllButton.textContent = "Cancel All";
+        selectedDiv.appendChild(cancelAllButton);
+      }
+    });
+
+    function deleteOption(element) {
+      const optionDiv = element.parentNode;
+      optionDiv.parentNode.removeChild(optionDiv);
+
+
+      const outputDiv = document.createElement('div');
+      outputDiv.classList.add('output-div'); // Add the CSS class to the output div
+      outputDiv.innerHTML = output;
+      selectedDiv.appendChild(outputDiv);
+    }
+  </script>
   <!-- <script src="./js/customize.js"></script> -->
 </body>
 

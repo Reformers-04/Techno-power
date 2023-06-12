@@ -102,6 +102,20 @@ padding: 1vw;
 }
 
 
+
+.selected img:hover {
+  opacity: 0.7;
+  /* Reduce opacity on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+/* CSS for click effect */
+.selected img:active {
+  transform: scale(0.9);
+  /* Scale down the image on click */
+}
+
 select {
   font-size: 1.0vw;
   /* margin: 0 0 0 0.5vw; */
@@ -177,12 +191,25 @@ input[type="checkbox"]:disabled {
   margin: 1vw .5vw;
   padding: 0.5vw 1.5vw;
   text-align: center;
-  display: flex;
-  flex-flow: row;
+  display: block;
+  flex-flow: column wrap;
   justify-content: space-between;
   background-color: #0C134F;
   color: white;
-  border-radius: 25vw;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.selected div div {
+  margin: 1vw .5vw;
+  padding: 0.5vw 1.5vw;
+  text-align: center;
+  display: block;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  background-color: #0C134F;
+  color: white;
+  border-radius: 25px;
   align-items: center;
 }
 
