@@ -370,8 +370,8 @@
 
     submitButton.addEventListener("click", function () {
       const selectedOptions = [];
-
       const selectedElements = document.querySelectorAll(".selected div");
+
       selectedElements.forEach(function (element) {
         const text = element.textContent.trim();
         if (text !== "") {
@@ -398,24 +398,12 @@
       const hasPreInstalledGamersSoft = document.getElementById("pre-gamers").checked;
 
       const output = `
-      <div class="selected">
-
-      <h3> Selected </h3> <br>
-      
-
-       <div>${selectedHardware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)"> <br>
-       <div>${selectedDesign}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)"> <br>
-       <div>${selectedSoftware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw"
-                onclick="deleteOption(this)">
-
-       </div>
-      
-      
-       
-
-    `;
+    <div class="selected">
+      <h3>Selected</h3> <br>
+      <div>${selectedHardware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div><br>
+      <div>${selectedDesign}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div><br>
+      <div>${selectedSoftware}<img src="./ass/Customize/x-customize.png" width="30vw" height="30vw" onclick="deleteOption(this)"> </div>
+    </div>`;
 
       selectedDiv.innerHTML = output;
     });
@@ -433,13 +421,8 @@
     function deleteOption(element) {
       const optionDiv = element.parentNode;
       optionDiv.parentNode.removeChild(optionDiv);
-
-
-      const outputDiv = document.createElement('div');
-      outputDiv.classList.add('output-div'); // Add the CSS class to the output div
-      outputDiv.innerHTML = output;
-      selectedDiv.appendChild(outputDiv);
     }
+
 
 
     // range script

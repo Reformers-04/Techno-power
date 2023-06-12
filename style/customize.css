@@ -69,6 +69,8 @@ main {
   border-radius: 25px;
   margin: 10px auto;
   padding: auto;
+  justify-content: center;
+
 }
 
 .customize {
