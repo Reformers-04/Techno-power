@@ -129,15 +129,24 @@ img {
 
 .first {
     display: inline-flex;
+
     margin-left: 23%;
     font-size: large;
+
+
+    padding-left: 25.5%;
+    
 
 }
 
 .second {
     display: inline-flex;
+
     margin-left: 23%;
     font-size: large;
+
+    margin-left: 25.5%;
+
 }
 
 :root {
