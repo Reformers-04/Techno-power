@@ -21,6 +21,7 @@
 }
 
 .first-div {
+    font-family: 'Asap Condensed', sans-serif;
     background-color: #D4ADFC;
     width: 70%;
     left: 15%;
@@ -30,10 +31,11 @@
     text-align: center;
     border-radius: 4%;
     font-size: large;
+    height: 52%;
 }
 
 .second-div {
-
+    font-family: 'Asap Condensed', sans-serif;
     background-color: #D4ADFC;
     width: 70%;
     left: 15%;
@@ -49,12 +51,14 @@
 .team {
     text-align: center;
     margin-top: 59%;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 body {
 
     background: #ffffff;
     color: black;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 img {
@@ -62,7 +66,7 @@ img {
 }
 
 .pro-card {
-
+    font-family: 'Asap Condensed', sans-serif;
     width: 245px;
     padding: 30px;
     background-size: 100% auto;
@@ -98,6 +102,7 @@ img {
     padding: 30px;
     font-size: 15px;
     text-align: center;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 .pro-card .description h3 {
@@ -138,6 +143,10 @@ img {
     display: inline-flex;
     margin-left: 23%;
     font-size: large;
+
+}
+
+
 
 
 :root {
@@ -281,7 +290,10 @@ body {
 .footer .credit span {
     color: var(--green);
 }
+
+
 * {
     font-family: 'Asap Condensed', sans-serif;
   
   }
+
