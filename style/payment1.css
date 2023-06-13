@@ -585,3 +585,7 @@
     color: var(--green);
   }
   
+  * {
+    font-family: 'Asap Condensed', sans-serif;
+  
+  }
