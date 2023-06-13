@@ -9,72 +9,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style/home-product.css">
     <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="style/home-product.css">
+   
     
-  <link
-  href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,600;0,800;1,300;1,900&family=Grandstander:ital,wght@0,200;0,400;1,600&display=swap"
-  rel="stylesheet">
+ 
 
 </head>
 <body>
-  <header>
+    <header>
+        <div class="header-3" style="background-color: #0C134F;">
+            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
-    <div class="header-3" style="background-color: #0C134F;">
-        <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="index.html" class="page">Home</a></li>
+                <a href="Innovation.html">Tech-innovation</a>
+                <a href="customize.html">Cutomization</a>
+                <a href="catalog.html" >Product Catalog</a>
+                <a href="About.html">About Us</a>
+            </nav>
 
-        <div id="menu-bar" class="fas fa-bars"></div>
-        <nav class="navbar">
-           
-            <a href="index.html">Home</a></li>
-                <a href="Innovation.html">Tech-innovation</a> 
-               <a href="customize.html">Cutomization</a>
-               <a href="catalog.html">Product Catalog</a>
-                <a href="About.html">About Us</a> 
-               
-        </nav>
-       
-        <button  id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png" style="height: 30px; width: 30px; display: flex; "> </button>
-        </button>
-        <div class="icons">
-           
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
+                    style="height: 30px; width: 30px; display: flex; "> </button>
+            </button>
+            <div class="cart-box" >
+                <div class="cart-icon">
+                    <i class="fas fa-cart-arrow-down fa-2x"></i>
+                </div>
+                <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
+                    <h2>Shopping Bag</h2>
+                    <div class="cart-wrapper"id="cart-box">
+
+                    </div>
+                    
+                    
+                    <div class="subtotal"></div>
+                    <div class="checkout cheack"><a href="payment1.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
+                    
+                </div>
+            </div>
            
         </div>
-    </div>
+        </div>
+    </header>
 
-</header>
 
 <!-- header section ends -->
 
 <!-- home section starts  -->
 
+    
 <section class="home" id="home">
 
-    <div class="swiper-container home-slider">
+    <div class="swiper-container home-slider" style="height: 50%;">
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" >
 
-            <div class="swiper-slide">
-                <div class="box" style="background: url(./assets/source/designecologist-Pmh0UoG1vlE-unsplash.jpg);">
+            <div class="swiper-slide" >
+                <div class="box" style="background: url(ass/pic0.jpg);">
                     <div class="content">
-                        <h3>Techno-Power</h3>
+                        <span>upto 75% off</span>
+                        <h3>Why are you waiting</h3>
                       
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="box" style="background: url(./assets/source/juan-pablo-ibarra-IBHKDe75gOg-unsplash.jpg);">
+                <div class="box" style="background: url(ass/pic.jpg);">
                     <div class="content">
-                        <h3>Techno-Power</h3>
-                        
+                        <span>upto 45% off</span>
+                        <h3>Why are you waiting</h3>
+                       
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="box" style="background: url(./assets/source/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg);">
+                <div class="box" style="background: url(ass/picv.jpg);">
                     <div class="content">
-                        <h3>Techno-Power</h3>
-                  
+                        <span>upto 65% off</span>
+                        <h3>Why are you waiting</h3>
+                 
                     </div>
                 </div>
             </div>
@@ -85,7 +101,7 @@
 
     </div>
 
-</section> 
+</section>
 <!-- --------------------------------------------------------------------------- -->
 <br>
 <br>
@@ -106,7 +122,7 @@
                 <div class="content">
                     <h3>Microsoft Xbox Series S</h3>
                     <button>
-                        <span class="button_top "> shop now </span>
+                        <span class="cheack "> shop now </span>
                       </button>
                 </div>
             </div>
@@ -118,7 +134,7 @@
         <div class="content">
             <h3>SAMSUNG 16" Galaxy Book3</h3>
             <button>
-                <span class="button_top"> shop now </span>
+                <span class="cheack"> shop now </span>
               </button>
         </div>
     </div>
@@ -130,7 +146,7 @@
         <div class="content">
             <h3>Canon EF 16-35mm Lens</h3>
             <button>
-                <span class="button_top"> shop now </span>
+                <span class="cheack"> shop now </span>
               </button>
         </div>
     </div>
@@ -142,7 +158,7 @@
         <div class="content">
             <h3>Headsets with microphone</h3>
             <button>
-                <span class="button_top"> shop now </span>
+                <span class="cheack"> shop now </span>
               </button>
         </div>
     </div>
@@ -249,7 +265,7 @@
     <h1 class="heading"> WHY YOU CHOOSE US </h1>
         <br>
         <br>
-    <div class="cel">
+    <div class="cel" style="margin-left: 250px;">
         <div class="home-icons">
             <img src="./assets/icons/🦆 icon _Star review_.png" alt="">
             <br>
@@ -261,12 +277,12 @@
             <p>Fast Delivery </p>
         </div>
         <div class="home-icons">
-            <img src="./assets/icons/Group 2251.png" alt="">
+            <img src="./assets/icons/Group 2251.png" alt="" style="margin-left: 40px;">
             <br>
             <p>Standing Offers</p>
         </div>
     </div>
-        <div class="cel">
+        <div class="cel"  style="margin-left: 250px;">
             <div class="home-icons">
                 <img src="./assets/icons/🦆 icon _Collaborate_.png" alt="">
             <br>
@@ -293,9 +309,8 @@
 
         <div class="box">
             <h3>about us</h3>
-            <p> Techno-Power is one of the largest IT distributors in the market.Techno-Power specializes in offering a complete selection of memory,
-                storage products and other hardware and software components for PCs and servers,
-                and consumer electronics</p>
+            <img src="assets/logo.png">
+            <p> Techno-Power is one of the largest IT distributors in the market.Techno-Power </p>
         </p>
         </div>
         <div class="box">
@@ -328,8 +343,15 @@
 </section>
 
 <script src="js/homepage.js"></script>
+
+
+
+
+
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="main0.js"></script>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

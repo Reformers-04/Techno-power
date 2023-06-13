@@ -604,7 +604,7 @@ button:active .button_top {
   }
   .carousel :where(.card, .img) {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
   }
   .carousel .card {
@@ -621,12 +621,14 @@ button:active .button_top {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
   .carousel .card img {
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
+    padding-top:0 ;
   }
   .card .img img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-top: 0;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -659,22 +661,4 @@ button:active .button_top {
 
   
 
-button {
-  padding: 15px 25px;
-  border: unset;
-  border-radius: 15px;
-  color: #212121;
-  z-index: 1;
-  background: #e8e8e8;
-  position: relative;
-  font-weight: 1000;
-  font-size: 17px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
-  overflow: hidden;
-}
-.buy:hover {
-  color: white;
-  cursor: pointer;
-}
+

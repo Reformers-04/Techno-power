@@ -1,3 +1,31 @@
+
+
+
+const modeToggle = document.getElementById('mode-toggle');
+const body = document.body;
+
+modeToggle.addEventListener('click', function() {
+  body.classList.toggle('dark-mode');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -82,3 +110,11 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+
+
+
+
+

@@ -1,119 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payment1</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <link rel="stylesheet" href="./style/payment1.css">
-  
-   <link
-   href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,600;0,800;1,300;1,900&family=Grandstander:ital,wght@0,200;0,400;1,600&display=swap"
-   rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payment1</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./style/payment1.css">
+  <link rel="stylesheet" href="./style/home-product.css">
+  <link rel="stylesheet" href="style/header.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,600;0,800;1,300;1,900&family=Grandstander:ital,wght@0,200;0,400;1,600&display=swap"
+    rel="stylesheet">
 
 
 </head>
+
+
+
+<body>
   <header>
-        <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
-    
-            <div id="menu-bar" class="fas fa-bars"></div>
-            <nav class="navbar">
-               
-                <a href="index.html">Home</a></li>
-                    <a href="Innovation.html">Tech-innovation</a> 
-                   <a href="customize.html">Cutomization</a>
-                   <a href="catalog.html">Product Catalog</a>
-                    <a href="About.html">About Us</a> 
-                   
-            </nav>
-           
-            <button  id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png" style="height: 30px; width: 30px; display: flex; "> </button>
-            </button>
-            <div class="icons">
-           
-                <a href="#" class="fas fa-shopping-cart"></a>
-               
-            </div>
-        </div>
-    
-    </header>
+    <div class="header-3" style="background-color: #0C134F;">
+      <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
-    
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a href="index.html">Home</a></li>
+        <a href="Innovation.html">Tech-innovation</a>
+        <a href="customize.html">Cutomization</a>
+        <a href="catalog.html" >Product Catalog</a>
+        <a href="About.html">About Us</a>
+      </nav>
 
+      <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
+          style="height: 30px; width: 30px; display: flex; "> </button>
+      </button>
+     
 
-    <div class="container">
-      <div class="shipping-form">
-        <h2>Shipping Details</h2>
-        <form id="payment-form" onsubmit="submitForm(event)">
-          <input type="text" placeholder="First Name" name="first-name" required>
-          <input type="text" placeholder="Last Name" name="last-name" required>
-          <input type="text" placeholder="Address Line 1" name="address-line1" required>
-          <input type="text" placeholder="Address Line 2" name="address-line2">
-          <input type="text" placeholder="Country" name="country" required>
-          <input type="text" placeholder="City" name="city" required>
-          <input type="text" placeholder="Zip Code" name="zip-code" required>
-          <input type="text" placeholder="Phone Number" name="phone-number" required>
-          <p>Shipping Options:</p>
-          <label>
-            <input type="radio" name="shipping" value="free"> Free Shipping
-          </label>
-          <label>
-            <input type="radio" name="shipping" value="next-day"> Next Day Delivery - $20
-          </label>
-          <div class="buttons">
-            <button type="submit">Complete Order</button>
-            <button type="reset">Cancel Order</button>
-          </div>
-        </form>
-      </div>
     </div>
-</body>
+    </div>
+  </header>
 
+
+  <div class="cart-box" >
+    <div class="cart-icon" >
+        <i class="fas fa-cart-arrow-down fa-2x"></i>
+    </div>
+    <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
+        <h2>Your Bag</h2>
+        <div class="cart-wrapper"id="cart-box">
+
+        </div>
+        
+        
+        <div class="subtotal"></div>
+        <div class="checkout cheack"><a href="#" style="text-decoration: none; color: aliceblue;">complete pay</a></div>
+        
+    </div>
+</div>   
     
-    <!-- footer section starts  -->
 
-  <section class="footer">
+  
+
+
+  <div class="container">
+    <div>
+      <h2>Shipping Details</h2>
+      <form id="payment-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="First Name" name="first-name" required>
+        <input type="text" placeholder="Last Name" name="last-name" required>
+        <input type="text" placeholder="Address Line 1" name="address-line1" required>
+        <input type="text" placeholder="Address Line 2" name="address-line2">
+        <input type="text" placeholder="Country" name="country" required>
+        <input type="text" placeholder="City" name="city" required>
+        <input type="text" placeholder="Zip Code" name="zip-code" required>
+        <input type="text" placeholder="Phone Number" name="phone-number" required>
+        <p>Shipping Options:</p>
+        <label>
+          <input type="radio" name="shipping" value="free"> Free Shipping
+        </label>
+        <label>
+          <input type="radio" name="shipping" value="next-day"> Next Day Delivery - $20
+        </label>
+        <div class="buttons">
+          <a href="payment.html" class="cheack">Complet Order</a>
+          <a type="reset" class="cheack">Cancel Order</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- footer section starts  -->
+  <section class="footer" style="background-color: #0C134F;">
 
     <div class="box-container">
 
-      <div class="box">
-        <h3>about us</h3>
-        <p>Techno-Power is one of the largest IT distributors in the market.Techno-Power specializes in offering a complete selection of memory,
-          storage products and other hardware and software components for PCs and servers,
-          and consumer electronics</p>
-      </div>
-      <div class="box">
-        <h3>branch locations</h3>
-        <a href="#">jordan</a>
-        <a href="#">USA</a>
-        <a href="#">japan</a>
-        <a href="#">france</a>
-      </div>
-      <div class="box">
-        <h3>quick links</h3>
-        <a href="#">home</a>
-        <a href="#">category</a>
-        <a href="#">product</a>
-        <a href="#">deal</a>
-        <a href="#">contact</a>
-      </div>
-      <div class="box">
-        <h3>follow us</h3>
-        <a href="#">facebook</a>
-        <a href="#">twitter</a>
-        <a href="#">instagram</a>
-        <a href="#">linked</a>
-      </div>
+        <div class="box">
+            <h3>about us</h3>
+            <img src="assets/logo.png">
+            <p> Techno-Power is one of the largest IT distributors in the market.Techno-Power </p>
+        </p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">jordan</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">category</a>
+            <a href="#">product</a>
+            <a href="#">deal</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linked</a>
+        </div>
 
     </div>
 
-    <h1 class="credit"> created by <span> Techno-Power </span> | all rights reserved! </h1>
-
-  </section>
+    <h3 class="credit"> created by <span>Reformers </span> | all rights reserved! </h3>
+    
+</section>
 
   <!-- footer section ends -->
 
@@ -133,19 +154,20 @@
   </script>
 
   <script src="main0.js"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/64884a0f94cf5d49dc5d6318/1h2q62j4h';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+  <script src="main-product.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/64884a0f94cf5d49dc5d6318/1h2q62j4h';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>

@@ -11,20 +11,22 @@
 <body>
 
 
+   
+
     <header>
         <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="../assets/logo.png"> </a>
+            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
-                <a href="">Home</a></li>
-                <a href="tech.html">Tech-innovation</a>
+                <a href="index.html">Home</a></li>
+                <a href="Innovation.html">Tech-innovation</a>
                 <a href="customize.html">Cutomization</a>
-                <a href="catalog.html" >Product Catalog</a>
-                <a href="about.html">About Us</a>
+                <a href="catalog.html" class="page">Product Catalog</a>
+                <a href="About.html">About Us</a>
             </nav>
 
-            <button id="mode-toggle" class="btn"> <img src="../🦆 icon _Brightness contrast_.png"
+            <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
                     style="height: 30px; width: 30px; display: flex; "> </button>
             </button>
             <div class="cart-box" >
@@ -33,13 +35,13 @@
                 </div>
                 <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
                     <h2>Shopping Bag</h2>
-                    <div class="cart-wrapper">
+                    <div class="cart-wrapper"id="cart-box">
 
                     </div>
                     
                     
                     <div class="subtotal"></div>
-                    <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
+                    <div class="checkout cheack"><a href="payment1.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
                     
                 </div>
             </div>
@@ -48,11 +50,13 @@
         </div>
     </header>
 
+
+
 <main>
     <div data-id="0" class="container-product">
         <div class="product">
             <div class="gallery">
-                <img src="../assets/product-detil/product3/1.jpg" id="productImg" >
+                <img src="../assets/product-detil/product4/1.jpg" id="productImg" >
                 <div class="controls">
                     <span class="btnproduct active"></span>
                     <span class="btnproduct"></span>
@@ -60,23 +64,24 @@
                 </div>
             </div>
             <div class="details">
-                <h1>Canon Camera EOS 4000D</h1>
+                <h1>COOLER MASTER HAF 500 ARGB Mid Tower</h1>
                     <div class="stars">
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star "></i>
-                      <a href="#">2 Review</a>
+                      <a href="#">8 Review</a>
                     </div>
                 <hr width="27%">
                   
-                <h2>$689</h2>
+                <h2>$110</h2>
                 <hr width="27%">
                 <p>
-                     DSLR Digital Camera 18 Megapixel APS-C Sensor
-                     WiFi Connectivity Optical Viewfinder Full HD EOS Movies
-                    Scene Intelligent Auto Li-ion Battery LP-E10 2.7 Inch LCD Screen
+                    Tempered Glass Gaming Case w/ 3x ARGB Fans (2x 200mm + 1x120mm)
+                    Case Form Factor Mid-Tower Material	Steel Mesh Plastic
+                    ITX-Micro ATX-ATX-SSI CEB-E-ATX*
+
                 </p>
 
                 <button class="addtocart">
@@ -105,11 +110,11 @@
         <!-- similar item 1 -->
         <div data-id="1" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product3/similar/1.png">
-                <p>Canon Camera EOS 6D Mark II</p>
+                <img src="../assets/product-detil/product4/similar/1.png">
+                <p>Lian Li LANCOOL 2 MESH C RGB ATX Mid</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$1850</H4>
+                <H4 class="priceM">$85</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -122,11 +127,11 @@
         <!-- similar item 2 -->
         <div data-id="2" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product3/similar/2.png">
-                <p>Canon PowerShot SX540 HS</p>
+                <img src="../assets/product-detil/product4/similar/2.png">
+                <p>NZXT H510 ELITE MATTE BLACK RGB</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$619</H4>
+                <H4 class="priceM">$129</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -143,11 +148,11 @@
         <!-- similar item 3 -->
         <div data-id="3" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product3/similar/3.png">
-                <p>Canon POWERSHOT G7 X MKII</p>
+                <img src="../assets/product-detil/product4/similar/3.png">
+                <p>COOLER MASTER MASTERBOX MB500</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$867</H4>
+                <H4 class="priceM">$55</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -166,7 +171,7 @@
 </div>
 
 
-<hr class="hr2">
+<hr class="hr2" style="width: 100%;">
 
 <Div class="Reviews" >
     <h1>Reviews </h1>
@@ -292,7 +297,7 @@
   let productImg = document.getElementById("productImg");
 let btnproduct = document.getElementsByClassName("btnproduct");
 btnproduct[0].onclick=function(){
-productImg.src="../assets/product-detil/product3/1.jpg";
+productImg.src="../assets/product-detil/product4/1.jpg";
 
 
 for(b of btnproduct){
@@ -304,7 +309,7 @@ this.classList.add("active");
 
 
 btnproduct[1].onclick=function(){
-productImg.src="../assets/product-detil/product3/2.jpg";
+productImg.src="../assets/product-detil/product4/2.jpg";
 
 
 for(b of btnproduct){
@@ -316,7 +321,7 @@ b.classList.remove("active");
 this.classList.add("active");
 }
 btnproduct[2].onclick=function(){
-productImg.src="../assets/product-detil/product3/3.jpg";
+productImg.src="../assets/product-detil/product4/3.jpg";
 for(b of btnproduct){
 b.classList.remove("active");
 

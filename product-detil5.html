@@ -13,18 +13,18 @@
 
     <header>
         <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="../assets/logo.png"> </a>
+            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
-                <a href="">Home</a></li>
-                <a href="tech.html">Tech-innovation</a>
+                <a href="index.html">Home</a></li>
+                <a href="Innovation.html">Tech-innovation</a>
                 <a href="customize.html">Cutomization</a>
-                <a href="catalog.html" >Product Catalog</a>
-                <a href="about.html">About Us</a>
+                <a href="catalog.html" class="page">Product Catalog</a>
+                <a href="About.html">About Us</a>
             </nav>
 
-            <button id="mode-toggle" class="btn"> <img src="../🦆 icon _Brightness contrast_.png"
+            <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
                     style="height: 30px; width: 30px; display: flex; "> </button>
             </button>
             <div class="cart-box" >
@@ -33,13 +33,13 @@
                 </div>
                 <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
                     <h2>Shopping Bag</h2>
-                    <div class="cart-wrapper">
+                    <div class="cart-wrapper"id="cart-box">
 
                     </div>
                     
                     
                     <div class="subtotal"></div>
-                    <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
+                    <div class="checkout cheack"><a href="payment1.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
                     
                 </div>
             </div>
@@ -52,7 +52,7 @@
     <div data-id="0" class="container-product">
         <div class="product">
             <div class="gallery">
-                <img src="../assets/product-detil/product4/1.jpg" id="productImg" >
+                <img src="../assets/product-detil/product5/1.jpg" id="productImg" >
                 <div class="controls">
                     <span class="btnproduct active"></span>
                     <span class="btnproduct"></span>
@@ -60,23 +60,24 @@
                 </div>
             </div>
             <div class="details">
-                <h1>COOLER MASTER HAF 500 ARGB Mid Tower</h1>
+                <h1>HP LaserJet MFP M141w Printer</h1>
                     <div class="stars">
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
-                      <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star "></i>
-                      <a href="#">8 Review</a>
+                      <i class="fa-solid fa-star "></i>
+                      <a href="#">10 Review</a>
                     </div>
                 <hr width="27%">
                   
-                <h2>$110</h2>
+                <h2>$135</h2>
                 <hr width="27%">
                 <p>
-                    Tempered Glass Gaming Case w/ 3x ARGB Fans (2x 200mm + 1x120mm)
-                    Case Form Factor Mid-Tower Material	Steel Mesh Plastic
-                    ITX-Micro ATX-ATX-SSI CEB-E-ATX*
+                    HP LaserJet MFP M141w Printer (7MD74A)
+                    HP LaserJet MFP M141w Printer (7MD74A)
+                    Functions Print, copy, scan
+                    Print speed Up to 20 ppm 1 Print quality black (best) Up to 600 x 600 dp
 
                 </p>
 
@@ -106,11 +107,11 @@
         <!-- similar item 1 -->
         <div data-id="1" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product4/similar/1.png">
-                <p>Lian Li LANCOOL 2 MESH C RGB ATX Mid</p>
+                <img src="../assets/product-detil/product5/similar/1.png">
+                <p>HP Laser MFP 135w</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$85</H4>
+                <H4 class="priceM">$145</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -123,11 +124,11 @@
         <!-- similar item 2 -->
         <div data-id="2" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product4/similar/2.png">
-                <p>NZXT H510 ELITE MATTE BLACK RGB</p>
+                <img src="../assets/product-detil/product5/similar/2.png">
+                <p>HP Printer DeskJet Plus 4120 All-in-One</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$129</H4>
+                <H4 class="priceM">$80</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -144,7 +145,7 @@
         <!-- similar item 3 -->
         <div data-id="3" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product4/similar/3.png">
+                <img src="../assets/product-detil/product5/similar/3.png">
                 <p>COOLER MASTER MASTERBOX MB500</p>
             </div>
             <div class="similar-item ">
@@ -167,7 +168,7 @@
 </div>
 
 
-<hr class="hr2">
+<hr class="hr2" style="width: 100%;">
 
 <Div class="Reviews" >
     <h1>Reviews </h1>
@@ -293,7 +294,7 @@
   let productImg = document.getElementById("productImg");
 let btnproduct = document.getElementsByClassName("btnproduct");
 btnproduct[0].onclick=function(){
-productImg.src="../assets/product-detil/product4/1.jpg";
+productImg.src="../assets/product-detil/product5/1.jpg";
 
 
 for(b of btnproduct){
@@ -305,7 +306,7 @@ this.classList.add("active");
 
 
 btnproduct[1].onclick=function(){
-productImg.src="../assets/product-detil/product4/2.jpg";
+productImg.src="../assets/product-detil/product5/2.jpg";
 
 
 for(b of btnproduct){
@@ -317,7 +318,7 @@ b.classList.remove("active");
 this.classList.add("active");
 }
 btnproduct[2].onclick=function(){
-productImg.src="../assets/product-detil/product4/3.jpg";
+productImg.src="../assets/product-detil/product5/3.jpg";
 for(b of btnproduct){
 b.classList.remove("active");
 

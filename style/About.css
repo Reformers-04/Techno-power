@@ -52,6 +52,7 @@
     text-align: center;
     margin-top: 59%;
     font-family: 'Asap Condensed', sans-serif;
+    align-items: center;
 }
 
 body {
@@ -67,13 +68,15 @@ img {
 
 .pro-card {
     font-family: 'Asap Condensed', sans-serif;
-    width: 245px;
-    padding: 30px;
+    width: 250px;
+    height: 200px;
+    padding: 50px;
     background-size: 100% auto;
     background-color: #5C469C;
     transition: all 0.4s ease-out;
     position: relative;
     overflow: hidden;
+
 }
 
 .pro-card img {
@@ -128,21 +131,26 @@ img {
 }
 
 .card {
-    display: inline;
+    display: block;
+align-items: center;
 
 }
 
 .first {
     display: inline-flex;
-    margin-left: 23%;
-    font-size: large;
+   
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 100px;
 
 }
 
 .second {
     display: inline-flex;
-    margin-left: 23%;
-    font-size: large;
+  
+    font-size: 20px;
+    padding-left: 100px;
+    
 }
 
 :root {
@@ -286,4 +294,13 @@ body {
 }
 .footer .credit span {
     color: var(--green);
+}
+
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px;
+    text-align: center;
+
 }

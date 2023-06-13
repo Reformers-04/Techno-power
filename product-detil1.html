@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product-detil</title>
     <link rel="stylesheet" href="../style/product-detil.css">
+  
     <script src="https://kit.fontawesome.com/439e4a89de.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 
+   
+
+
     <header>
         <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="../assets/logo.png"> </a>
+            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
-                <a href="#">Home</a></li>
-                <a href="tech.html">Tech-innovation</a>
+                <a href="index.html">Home</a></li>
+                <a href="Innovation.html">Tech-innovation</a>
                 <a href="customize.html">Cutomization</a>
-                <a href="catalog.html" >Product Catalog</a>
-                <a href="about.html">About Us</a>
+                <a href="catalog.html" class="page">Product Catalog</a>
+                <a href="About.html">About Us</a>
             </nav>
 
-            <button id="mode-toggle" class="btn"> <img src="../🦆 icon _Brightness contrast_.png"
+            <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
                     style="height: 30px; width: 30px; display: flex; "> </button>
             </button>
             <div class="cart-box" >
@@ -33,13 +37,13 @@
                 </div>
                 <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
                     <h2>Shopping Bag</h2>
-                    <div class="cart-wrapper">
+                    <div class="cart-wrapper"id="cart-box">
 
                     </div>
                     
                     
                     <div class="subtotal"></div>
-                    <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
+                    <div class="checkout cheack"><a href="payment1.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
                     
                 </div>
             </div>
@@ -47,6 +51,9 @@
         </div>
         </div>
     </header>
+
+
+
 
 <main>
     <div data-id="0" class="container-product">
@@ -165,7 +172,7 @@
 </div>
 
 
-<hr class="hr2">
+<hr class="hr2" style="width: 100%;">
 
 <Div class="Reviews" >
     <h1>Reviews </h1>
@@ -247,14 +254,15 @@
 
    <!-- footer section starts  -->
 
-   <section class="footer">
+   <section class="footer" style="background-color: #0C134F;">
 
     <div class="box-container">
 
         <div class="box">
             <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero autem
-                nemo amet recusandae eveniet?</p>
+            <img src="assets/logo.png">
+            <p> Techno-Power is one of the largest IT distributors in the market.Techno-Power </p>
+        </p>
         </div>
         <div class="box">
             <h3>branch locations</h3>
@@ -281,15 +289,15 @@
 
     </div>
 
-    <h1 class="credit"> created by <span> REFORMER TEAM </span> | all rights reserved! </h1>
-
+    <h3 class="credit"> created by <span>Reformers </span> | all rights reserved! </h3>
+    
 </section>
 
 <!-- footer section ends -->
 
     
 
-
+<script src="main-product.js"></script>
     <script>
         let productImg = document.getElementById("productImg");
 let btnproduct = document.getElementsByClassName("btnproduct");

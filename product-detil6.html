@@ -13,18 +13,18 @@
 
     <header>
         <div class="header-3" style="background-color: #0C134F;">
-            <a href="#" class="logo"> <img src="../assets/logo.png"> </a>
+            <a href="#" class="logo"> <img src="ass/logo.png"> </a>
 
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
-                <a href="">Home</a></li>
-                <a href="tech.html">Tech-innovation</a>
+                <a href="index.html">Home</a></li>
+                <a href="Innovation.html">Tech-innovation</a>
                 <a href="customize.html">Cutomization</a>
-                <a href="catalog.html" >Product Catalog</a>
-                <a href="about.html">About Us</a>
+                <a href="catalog.html" class="page">Product Catalog</a>
+                <a href="About.html">About Us</a>
             </nav>
 
-            <button id="mode-toggle" class="btn"> <img src="../🦆 icon _Brightness contrast_.png"
+            <button id="mode-toggle" class="btn"> <img src="🦆 icon _Brightness contrast_.png"
                     style="height: 30px; width: 30px; display: flex; "> </button>
             </button>
             <div class="cart-box" >
@@ -33,13 +33,13 @@
                 </div>
                 <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
                     <h2>Shopping Bag</h2>
-                    <div class="cart-wrapper">
+                    <div class="cart-wrapper"id="cart-box">
 
                     </div>
                     
                     
                     <div class="subtotal"></div>
-                    <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
+                    <div class="checkout cheack"><a href="payment1.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
                     
                 </div>
             </div>
@@ -52,7 +52,7 @@
     <div data-id="0" class="container-product">
         <div class="product">
             <div class="gallery">
-                <img src="../assets/product-detil/product8/1.jpg" id="productImg" >
+                <img src="../assets/product-detil/product6/1.jpg" id="productImg" >
                 <div class="controls">
                     <span class="btnproduct active"></span>
                     <span class="btnproduct"></span>
@@ -60,22 +60,23 @@
                 </div>
             </div>
             <div class="details">
-                <h1>ASUS ROG Strix GeForce RTX 4090 </h1>
+                <h1>Apple iPad 9th Generation 10.2″ With 256GB </h1>
                     <div class="stars">
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
-                      <a href="#">69 Review</a>
+                      <a href="#">48 Review</a>
                     </div>
                 <hr width="27%">
                   
-                <h2>$1849</h2>
+                <h2>$599</h2>
                 <hr width="27%">
                 <p>
-                    Memory Size 24 GB DDR6 2x performance and power efficiency
-                    3.5 slot design massive fin
+                    Capacity 256GB ,Size and Weight 250.6 mm 174.1 mm
+                    Display Retina display 10.2-inch LED-backlit Multi-Touch 
+                    Camera 8MP Wide camera ƒ/2.4 aperture Digital zoom 
 
                 </p>
 
@@ -99,11 +100,11 @@
         <!-- similar item 1 -->
         <div data-id="1" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product8/similar/1.png">
-                <p>ASUS ROG Strix GeForce RTX 4090 </p>
+                <img src="../assets/product-detil/product6/similar/1.png">
+                <p>Blackview Tab 7 Wi-Fi </p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$1800</H4>
+                <H4 class="priceM">$160</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -116,11 +117,11 @@
         <!-- similar item 2 -->
         <div data-id="2" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product8/similar/2.png">
-                <p>MSI Gaming GeForce RTX 4090 24GB</p>
+                <img src="../assets/product-detil/product6/similar/2.png">
+                <p>Samsung Galaxy Tab A7</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$1400</H4>
+                <H4 class="priceM">$140</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -137,11 +138,11 @@
         <!-- similar item 3 -->
         <div data-id="3" class="gradient">
             <div class="similar-item">
-                <img src="../assets/product-detil/product8/similar/3.png">
-                <p>MSI Gaming X Trio GeForce RTX 4070 Ti </p>
+                <img src="../assets/product-detil/product6/similar/3.png">
+                <p>Apple iPad Pro 11 2021</p>
             </div>
             <div class="similar-item ">
-                <H4 class="priceM">$1490</H4>
+                <H4 class="priceM">$799</H4>
                 <button class="similarbtn">
                     <div class="pretext">
                     <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
@@ -160,7 +161,7 @@
 </div>
 
 
-<hr class="hr2">
+<hr class="hr2" style="width: 100%;">
 
 <Div class="Reviews" >
     <h1>Reviews </h1>
@@ -286,7 +287,7 @@
   let productImg = document.getElementById("productImg");
 let btnproduct = document.getElementsByClassName("btnproduct");
 btnproduct[0].onclick=function(){
-productImg.src="../assets/product-detil/product8/1.jpg";
+productImg.src="../assets/product-detil/product6/1.jpg";
 
 
 for(b of btnproduct){
@@ -298,7 +299,7 @@ this.classList.add("active");
 
 
 btnproduct[1].onclick=function(){
-productImg.src="../assets/product-detil/product8/2.jpg";
+productImg.src="../assets/product-detil/product6/2.jpg";
 
 
 for(b of btnproduct){
@@ -310,7 +311,7 @@ b.classList.remove("active");
 this.classList.add("active");
 }
 btnproduct[2].onclick=function(){
-productImg.src="../assets/product-detil/product8/3.jpg";
+productImg.src="../assets/product-detil/product6/3.jpg";
 for(b of btnproduct){
 b.classList.remove("active");
 
