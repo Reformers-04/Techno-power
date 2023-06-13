@@ -27,36 +27,7 @@ menu.addEventListener('click', () =>{
     navbar.classList.toggle('active');
 });
 
-window.onscroll = () =>{
 
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-
-    if(window.scrollY > 250){
-        header.classList.add('active');
-    }else{
-        header.classList.remove('active');
-    }
-
-    if(window.scrollY > 250){
-        scrollTop.style.display = 'initial';
-    }else{
-        scrollTop.style.display = 'none';
-    }
-
-}
-
-var swiper = new Swiper(".home-slider", {
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    loop:true,
-});
 
 
 
@@ -138,8 +109,7 @@ addToCartBtns.forEach( (btn)=>{
 
 
 function addItemFunction(e){
-    const id = e.target.parentElement.parentElement.getAttribute("data-id")
-
+    const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
     const img = e.target.parentElement.parentElement.previousElementSibling.src
     const name = e.target.parentElement.previousElementSibling.textContent
     const desc = e.target.parentElement.children[0].textContent

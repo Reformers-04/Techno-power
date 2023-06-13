@@ -8,10 +8,11 @@
     background-color: var(--bg-color);
     color: var(--text-color);
    width: 100%;
+   font-family: 'Arvo', serif;
+font-family: 'Asap Condensed', sans-serif;
+font-family: 'Lora', serif;
   }
  
-
-
 
 
 
@@ -31,77 +32,11 @@
     align-items: center;
   }
  
-  #cart-items {
-    position: absolute;
-    top: 30px; /* Adjust the position as needed */
-    right: 0;
-    width: 200px;
-    background: white;
-    border: 1px solid black;
-    padding: 10px;
-    z-index: 999;
-  }
-  .btn {
-    
-    --color: #ce88d4;
-    --color2: rgb(10, 25, 30);
-    padding: 0.8em 1.75em;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 6px;
-    border: .3px solid var(--color);
-    transition: .5s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 1;
-    font-weight: 300;
-    font-size: 10px;
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    text-transform: uppercase;
-    color: var(--color);
-   }
-   .btn1 {
-    
-  margin-bottom: 6rem;
-   }
+
+
+ 
    
-   .btn::after, .btn::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    transform: skew(90deg) translate(-50%, -50%);
-    position: absolute;
-    inset: 50%;
-    left: 25%;
-    z-index: -1;
-    transition: .5s ease-out;
-    background-color: var(--color);
-   }
-   
-   .btn::before {
-    top: -50%;
-    left: -25%;
-    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::before {
-    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover::after {
-    transform: skew(45deg) translate(-50%, -50%);
-   }
-   
-   .btn:hover {
-    color: var(--color2);
-   }
-   
-   .btn:active {
-    filter: brightness(.7);
-    transform: scale(.98);
-   }
+  
 
 
   
@@ -633,6 +568,7 @@
     display: block;
     color:#fffdfd;
     font-size: 1.5rem;
+    text-decoration: none;
     padding:1rem 0;
   }
   
@@ -836,28 +772,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-.container{
-    width:1200px;
-    border:1px solid var(--white);
-    max-width: 100%;
-    margin:50px auto 0;
-    display: grid;
-    grid-template-columns: 200px auto 300px;
-    padding:20px;
-    border-radius: 30px;
-    min-height: 80vh;
-}
 
-.container .cart{
-    background-color: var(--white);
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-.container .center{
-    background-color: var(--light);
-    border-left: 1px solid var(--light);
-    border-right: 1px solid var(--light);
-}
 
 /* center */
  
@@ -866,6 +781,7 @@
 .footer{
   background-color: #27036b;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 
@@ -948,164 +864,6 @@ button {
 
 
 
-
-         .cart-box{
-          width:26% !important;
-          position: absolute;
-          left:72%;
-          top:25%;
-          /* border:solid 1px blue; */
-          padding:10px 20px;
-      }
-      h2{
-          font-size: x-large;
-          padding:15px 10px;
-      }
-      
-      .cart-wrapper{
-          overflow-y: auto;
-          max-height: 50%;
-          width:24vw;
-      }
-      .subtotal{
-          text-align: right;
-          padding:5%;
-      }
-      .checkout, .view-cart{
-          width:95%;
-          text-align: center;
-          cursor: pointer;
-          background-color: rgb(189, 117, 223);
-          font-size: large;
-          color: #fff;
-          margin:10px auto;
-          padding:10px 15px;
-         
-      }
-      .checkout{
-        margin-left: 4%;
-      }
-      .view-cart{
-          background-color: #fff;
-          border: 2px solid rgb(42, 44, 165);
-          color: rgb(27, 43, 134);
-      }
-      .cart-icon{
-          text-align: right;
-      }
-      
-      .cart-item{
-        display:grid;
-        grid-template-columns: 3fr 6fr 1fr;
-        padding:5% 2%;
-        border-bottom:solid 1px lightgray;  
-      }
-      
-      .cart-item img{
-          width:100%;
-      }
-      .cart-item .details{
-          padding-left:10%;
-      }
-      
-      .cart-item h3{
-        text-align: left; 
-        margin-bottom:5%; 
-      }
-      
-      .cart-item .price{
-      display: block;
-      text-align: right;
-      margin-top: 35%; 
-        }
-        
-       .quantity{
-           display: block;
-           margin-top:5%;
-       } 
-      
-       .fa-window-close{
-           color: rgb(126, 42, 165);
-       }
-       .cancel{
-           text-align: right;
-       }
-       .whole-cart-window{
-           border: solid lightgray 1px;
-           border-top:none;
-           position: fixed;
-           top:12vh;
-           background-color: #fff;
-           padding-right:2% ;
-           height: 100%;
-
-       }
-      
-       .hide{
-           display: none;
-       }
-      .non-empty::after{
-        content: var(--after-content);
-        font-size: 25px;
-        width:25px;
-        display: inline-block;
-        text-align: center;
-        position: relative;
-        top:-20px;
-        right:20%;
-        background-color: rgb(212, 0, 255);
-        border-radius: 50%;
-      }
-      
-      .card-wrapper{
-          display: flex;
-          flex-wrap: wrap;
-         
-
-      }
-      .card-item{
-          display: flex;
-          flex-direction: column;
-         width: 400px;
-          height:500px;
-          justify-content: center;
-          align-items: center;
-          border: solid 2px rgb(107, 74, 185);
-          margin: 5rem;
-          background: linear-gradient(to bottom, #d875d0, #7f27e4);
-      }
-      .card-item img{
-          width:100%;
-          margin-top: 0;
-      }
-      .card-item .details{
-          text-align: center; 
-          color: #ddd;
-      }
-      .img{
-        height: 30050px;
-        width: 250px;
-        margin-bottom: 2rem;
-      }
-      .card-item p,.card-item h3 {
-          margin-top:10px;   
-      }
-      .card-item span{
-          display: block;
-          margin-top:10px;
-      }
-      .add-to-cart-btn{
-          width: fit-content;
-          margin:auto;
-          /* margin-top:10px; */
-          padding: 10px 15px;
-          cursor: pointer;
-          background-color: rgb(255, 246, 255);
-          border:solid 2px #451880;
-          border-radius: 3px;
-          font-size: large;
-          color:#5f208a
-      }
 
 
 
@@ -1276,3 +1034,17 @@ button {
       transition: all 0.2s linear;
       transition-delay: 0.15s;
     }
+
+
+    .cart{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 360px;
+      min-height: 100vh;
+      padding: 20px;
+      background: #0C134F;
+      box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+
+    }
+    

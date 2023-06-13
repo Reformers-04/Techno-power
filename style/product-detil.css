@@ -1,7 +1,11 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 
@@ -97,6 +101,7 @@ margin-bottom: 6rem;
   justify-content: space-between;
   padding:2rem 9%;
   background:#27036b;
+  z-index: 100;
 }
 
 .header-1{
@@ -807,6 +812,8 @@ box-shadow: 0 0 0.6em .25em var(--glow-color),
 .details{
    
     padding: 40px;
+    width: 50%;
+    
     
    
 
@@ -913,24 +920,10 @@ box-shadow: 0 0 0.6em .25em var(--glow-color),
   i{
     margin-right:10px;
   }
-  .done{
-    background:#5C469C;
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-    transition:transform 0.3s ease;
+ 
+ 
+ 
   
-    transform:translate(-110%) skew(-40deg);
-  }
-  .posttext{
-    background:#5C469C;
-  }
-  .fa-check{
-    background:#5C469C;
-  }
-  
-
   .similar-h1{
     margin-top: 30px;
     text-align: center;
@@ -943,13 +936,14 @@ box-shadow: 0 0 0.6em .25em var(--glow-color),
   }
   .similar-item{
     width: 40%;
-    height: 250px;
+    height: 100%;
     padding: 8px;
     
   }
   
   .similar-item img{
  width: 100%;
+ height: 70%;
  
  
   }
@@ -1008,10 +1002,12 @@ i{
 .hr2{
     border: 1px solid black;
     margin-top: 3%;
+    width: 100%;
 
 }
 .Reviews{
   margin: 16px;
+  margin-left: 4.5%;
 }
 
 
@@ -1031,6 +1027,8 @@ i{
   width: 60%;
   height: 150px;
   padding: 8px;
+  color: white;
+  padding-left: 40px;
 
 
 }
@@ -1050,19 +1048,25 @@ i{
   border-left: 2px solid black;
   text-align: center;
   align-items: center;
-  padding: 50px 0;
-  height: 80%;
+  padding-top: 50px ;
+  height: 90%;
+  
 
 }
+
 .ReviewText p{
   height: 100%;
+  text-align: center;
+  
+  
 }
+
 .ReviewText2{
   border-left: 2px solid black;
   text-align: center;
   align-items: center;
-  padding: 50px 0;
-  height: 80%;
+  padding-top: 50px ;
+  height: 90%;
   
 }
 .ReviewText2 p{
@@ -1077,10 +1081,11 @@ i{
 
 
 .ReviewsSction{
+  width: 50%;
   display: grid;
   grid-template-columns: 1fr 3fr;
 grid-template-rows: 1fr 1fr;
-grid-column-gap: 15%;
+grid-column-gap: 8%;
 margin-left: 3.5%;
 margin-top: 16px;
 
@@ -1188,35 +1193,42 @@ body {
   padding-left: 40px;
   margin-top: 100px;
 }
+
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .footer .box-container .box {
   padding: 1rem;
   flex: 1 1 20rem;
 }
+
 .footer .box-container .box h3 {
   color: #FAF5F5;
   font-size: 1.5rem;
   padding: 1rem;
 }
+
 .footer .box-container .box p {
   color: #FFFAFA;
   font-size: 1rem;
   padding: 1rem;
 }
+
 .footer .box-container .box a {
   display: block;
   color: #FFFDFD;
   font-size: 1rem;
   padding: .5rem;
 }
+
 .footer .box-container .box a:hover {
   text-decoration: underline;
   color: var(--green);
 }
+
 .footer .credit {
   font-size: 1rem;
   padding: 1rem 1rem;
@@ -1225,6 +1237,7 @@ body {
   text-align: center;
   font-weight: normal;
 }
+
 .footer .credit span {
   color: var(--green);
 }
@@ -1232,5 +1245,104 @@ body {
 
 
 
+
+
+
+
+
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #0C134F;
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  transition: 0.3s;
+}
+.cart.active {
+right: 0;
+}
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+
+}
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title{
+  font-size: 1rem;
+  text-transform: uppercase;
+
+}
+.cart-remove{
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+
+
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid black;
+
+}
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+.total-price{
+  margin-left: 0.5rem;
+}
+.btn-buy{
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background:yellow ;
+  color: #ce88d4;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+.btn-buy:hover{
+  border: black;
+}
+
+.close-cart{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color:#222222 ;
+  cursor: pointer;
+
+
+
+}
 
 
