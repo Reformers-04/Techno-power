@@ -143,11 +143,7 @@ img {
     display: inline-flex;
     margin-left: 23%;
     font-size: large;
-
 }
-
-
-
 
 :root {
     --bg-color: white;
@@ -285,15 +281,9 @@ body {
     text-align: center;
     font-weight: normal;
     padding-left: 5px;
-}
 
+
+}
 .footer .credit span {
     color: var(--green);
 }
-
-
-* {
-    font-family: 'Asap Condensed', sans-serif;
-  
-  }
-
