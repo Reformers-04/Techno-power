@@ -12,12 +12,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link
-    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,600;0,800;1,300;1,900&family=Grandstander:ital,wght@0,200;0,400;1,600&display=swap"
-    rel="stylesheet">
 
-
-    <link rel="stylesheet" href="./style/home-product.css">
+    <link rel="stylesheet" href="./style/home.css">
+   
 
 </head>
 
@@ -28,7 +25,7 @@
 
             <div id="menu-bar" class="fas fa-bars"></div>
             <nav class="navbar">
-                <a href="index.html">Home</a></li>
+                <a href="hompage.html">Home</a></li>
                 <a href="Innovation.html">Tech-innovation</a>
                 <a href="customize.html">Cutomization</a>
                 <a href="catalog.html">Product Catalog</a>
@@ -48,161 +45,177 @@
 
 
 
-    <div class="cart-wrapper" id="cart-box">
-       
+
+    
+    <div class="cart-box" >
+        <div class="cart-icon" >
+            <i class="fas fa-cart-arrow-down fa-2x"></i>
+        </div>
+        <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
+            <h2>Your Bag</h2>
+            <div class="cart-wrapper"id="cart-box">
+
+            </div>
+            
+            
+            <div class="subtotal"></div>
+            <div class="checkout cheack"><a href="#" style="text-decoration: none; color: aliceblue;">complete pay</a></div>
+            
+        </div>
+    </div>   
+        
+            
+            
+
+
+   
+
+
+
+
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Number</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="mc.png" alt="">
+                    <img src="vi.png" alt="">
+                    <img src="pp.png" alt="">
+                </div>
+            </div>
+        </div>
+        <a class="cheack">Confirm</a>
+        <hr>
+        <div class="payparg" style="border-radius: 7px;">
+
+            <div class="cb" style="padding:10px;">
+                <input type="checkbox" id="cbx2" style="display: none;">
+                <label for="cbx2" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path
+                            d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z">
+                        </path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>
+            </div>
+
+            <p style="padding-right: 5px;">lorem Libero perferendis
+                quae neque perspiciatis. Officiis dolores maxime possimus quidem non minima, tenetur, illum, ad
+                consectetur cupiditate odit nulla blanditiis ab.
+                <img class="pimg" src="pp.png" alt="">
+            </p>
 
         </div>
+        <a class="cheack">
+            Pay now
+        </a>
+        <br>
+        <a class="cheack" style="margin-top: 0;">
+            Cancel
+        </a>
+
     </div>
 
+    <!-- contact section ends -->
 
+    <!-- footer section starts  -->
 
+    <section class="footer">
 
+        <div class="box-container">
 
-
-
-        <div class="container">
-            <h1>Confirm Your Payment</h1>
-            <div class="first-row">
-                <div class="owner">
-                    <h3>Owner</h3>
-                    <div class="input-field">
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="cvv">
-                    <h3>CVV</h3>
-                    <div class="input-field">
-                        <input type="password">
-                    </div>
-                </div>
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero
+                    autem
+                    nemo amet recusandae eveniet?</p>
             </div>
-            <div class="second-row">
-                <div class="card-number">
-                    <h3>Card Number</h3>
-                    <div class="input-field">
-                        <input type="text">
-                    </div>
-                </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">jordan</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
             </div>
-            <div class="third-row">
-                <h3>Card Number</h3>
-                <div class="selection">
-                    <div class="date">
-                        <select name="months" id="months">
-                            <option value="Jan">Jan</option>
-                            <option value="Feb">Feb</option>
-                            <option value="Mar">Mar</option>
-                            <option value="Apr">Apr</option>
-                            <option value="May">May</option>
-                            <option value="Jun">Jun</option>
-                            <option value="Jul">Jul</option>
-                            <option value="Aug">Aug</option>
-                            <option value="Sep">Sep</option>
-                            <option value="Oct">Oct</option>
-                            <option value="Nov">Nov</option>
-                            <option value="Dec">Dec</option>
-                        </select>
-                        <select name="years" id="years">
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                        </select>
-                    </div>
-                    <div class="cards">
-                        <img src="assets/mc.png" alt="">
-                        <img src="./assets/vi.png" alt="">
-                        <img src="assets/pp.png" alt="">
-                    </div>
-                </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">category</a>
+                <a href="#">product</a>
+                <a href="#">deal</a>
+                <a href="#">contact</a>
             </div>
-            <a class="cheack">Confirm</a>
-            <hr>
-            <div class="payparg">
-
-                <div class="cb">
-                    <input type="checkbox" id="cbx2" style="display: none;">
-                    <label for="cbx2" class="check">
-                        <svg width="18px" height="18px" viewBox="0 0 18 18">
-                            <path
-                                d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z">
-                            </path>
-                            <polyline points="1 9 7 14 15 4"></polyline>
-                        </svg>
-                    </label>
-                </div>
-
-                <p>lorem Libero perferendis
-                    quae neque perspiciatis. Officiis dolores maxime possimus quidem non minima, tenetur, illum, ad
-                    consectetur cupiditate odit nulla blanditiis ab.
-                    <img class="pimg" src="pp.png" alt="">
-                </p>
-
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linked</a>
             </div>
-            <button class="btn">
-                Pay now
-            </button>
-            <br>
-            <button class="btn">
-               Cancel
-            </button >
 
         </div>
 
-        <!-- contact section ends -->
+        <h1 class="credit"> created by <span> REFORMER TEAM </span> | all rights reserved! </h1>
 
-        <!-- footer section starts  -->
-
-        <section class="footer">
-
-            <div class="box-container">
-
-                <div class="box">
-                    <h3>about us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero
-                        autem
-                        nemo amet recusandae eveniet?</p>
-                </div>
-                <div class="box">
-                    <h3>branch locations</h3>
-                    <a href="#">jordan</a>
-                    <a href="#">USA</a>
-                    <a href="#">japan</a>
-                    <a href="#">france</a>
-                </div>
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#">home</a>
-                    <a href="#">category</a>
-                    <a href="#">product</a>
-                    <a href="#">deal</a>
-                    <a href="#">contact</a>
-                </div>
-                <div class="box">
-                    <h3>follow us</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linked</a>
-                </div>
-
-            </div>
-
-            <h1 class="credit"> created by <span> REFORMER TEAM </span> | all rights reserved! </h1>
-
-        </section>
+    </section>
 
 
-        <!-- footer section ends -->
+    <!-- footer section ends -->
 
-        <!-- scroll top button  -->
-        <a href="#home" class="scroll-top fas fa-angle-up"></a>
+    <!-- scroll top button  -->
+    <a href="#home" class="scroll-top fas fa-angle-up"></a>
 
 
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 
@@ -210,12 +223,16 @@
 
 
 
-        <script src="prod-main.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-  updateCartUI();
-});
-        </script>
+    <script src="prod-main.js"></script>
+    <script src="fscript.js"></script>
+    <script>
+       
+        var jsonData = JSON.parse(document.currentScript.innerText);
+    
+      
+        document.getElementById("cart-box").innerText = JSON.stringify(cartItem);
+      </script>
+
 </body>
 
 </html>
