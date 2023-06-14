@@ -7,49 +7,62 @@
     <title>product-detil</title>
     <link rel="stylesheet" href="../style/product-detil.css">
     <script src="https://kit.fontawesome.com/439e4a89de.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
 
     <header>
-        <div class="header-3" style="background-color: #0C134F;">
+        
             <a href="#" class="logo"> <img src="../assets/logo.png"> </a>
-
-            <div id="menu-bar" class="fas fa-bars"></div>
+                
+            
             <nav class="navbar">
-                <a href="">Home</a></li>
-                <a href="tech.html">Tech-innovation</a>
-                <a href="customize.html">Cutomization</a>
-                <a href="catalog.html" >Product Catalog</a>
-                <a href="about.html">About Us</a>
+                <a href="../hompage.html">Home</a></li>
+                <a href="../tech.html">Tech-innovation</a>
+                <a href="../customize.html">Cutomization</a>
+                <a href="../catalog.html" >Product Catalog</a>
+                <a href="../about.html">About Us</a>
             </nav>
 
             <button id="mode-toggle" class="btn"> <img src="../🦆 icon _Brightness contrast_.png"
                     style="height: 30px; width: 30px; display: flex; "> </button>
-            </button>
-            <div class="cart-box" >
-                <div class="cart-icon">
-                    <i class="fas fa-cart-arrow-down fa-2x"></i>
-                </div>
-                <div class="whole-cart-window hide" style="background-color: rgba(154, 101, 161, 0.938);">
-                    <h2>Shopping Bag</h2>
-                    <div class="cart-wrapper">
-
-                    </div>
-                    
-                    
-                    <div class="subtotal"></div>
-                    <div class="checkout"><a href="payment.html" style="text-decoration: none; color: aliceblue;">checkout</a></div>
-                    
-                </div>
-            </div>
+            
            
-        </div>
-        </div>
+           
+        
+                    <div class="container">
+
+           
+                        <i class='bx bx-shopping-bag' id="cart-icon"></i>
+                        <!-- cart -->
+                        <div class="cart">
+                            <h2 class="cart-title">Your Cart</h2>
+                            <!-- content -->
+                            <div class="cart-content">
+        
+        
+        
+                            </div>
+                            <!-- Total -->
+                            <div class="total">
+                                
+                                    <div class="total-title">total</div>
+                                    <div class="total-price">$0</div>
+                                
+                            </div>
+                            <!-- buy button -->
+                            <button type="button" class="btn-buy">Buy Now</button>
+                            <!-- cart close -->
+                            <i class='bx bx-x' id="close-cart"></i>
+                        </div>
+                        
+                    </div>
+
     </header>
 
 <main>
-    <div data-id="0" class="container-product">
+    <div  class="container-product">
         <div class="product">
             <div class="gallery">
                 <img src="../assets/product-detil/product6/1.jpg" id="productImg" >
@@ -59,33 +72,27 @@
                     <span class="btnproduct"></span>
                 </div>
             </div>
-            <div class="details">
-                <h1>Apple iPad 9th Generation 10.2″ With 256GB </h1>
+            <div class="details product-box">
+                <h1 class="section-title">Apple iPad 9th </h1>
                     <div class="stars">
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
                       <i class="fa-solid fa-star kk"></i>
-                      <i class="fa-solid fa-star kk"></i>
-                      <a href="#">48 Review</a>
+                      <i class="fa-solid fa-star"></i>
+                      <a href="#">7 Review</a>
                     </div>
                 <hr width="27%">
                   
-                <h2>$599</h2>
+                <h2 price>$599</h2>
                 <hr width="27%">
                 <p>
-                    Capacity 256GB ,Size and Weight 250.6 mm 174.1 mm
+                     Capacity 256GB ,Size and Weight 250.6 mm 174.1 mm
                     Display Retina display 10.2-inch LED-backlit Multi-Touch 
-                    Camera 8MP Wide camera ƒ/2.4 aperture Digital zoom 
-
+                    Camera 8MP Wide camera ƒ/2.4 aperture Digital zoom
                 </p>
 
-                <button class="addtocart">
-                    <div class="pretext">
-                      <i class="fas fa-cart-plus"></i> Add To Cart
-                    </div>
-                  </button>
-
+               
             </div>
         </div>
     </div>
@@ -95,66 +102,55 @@
     </Div>
 
 
-<div class="similar-products">
+<div class="similar-products shop-content">
 
         <!-- similar item 1 -->
-        <div data-id="1" class="gradient">
-            <div class="similar-item">
-                <img src="../assets/product-detil/product6/similar/1.png">
-                <p>Blackview Tab 7 Wi-Fi </p>
-            </div>
-            <div class="similar-item ">
-                <H4 class="priceM">$160</H4>
-                <button class="similarbtn">
-                    <div class="pretext">
-                    <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
-                    </div>
-                </button>
-                
-
-            </div>
-        </div>
-        <!-- similar item 2 -->
-        <div data-id="2" class="gradient">
-            <div class="similar-item">
-                <img src="../assets/product-detil/product6/similar/2.png">
-                <p>Samsung Galaxy Tab A7</p>
-            </div>
-            <div class="similar-item ">
-                <H4 class="priceM">$140</H4>
-                <button class="similarbtn">
-                    <div class="pretext">
-                    <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
-                    </div>
-                
-                    
+        <div class="gradient similar-item product-box">
+            <img src="../assets/product-detil/product6/similar/1.png" class="product-img">
+            <p class="section-title product-title">Blackview Tab 7 Wi-Fi</p>
+            <H4 class="priceM price">$159</H4>
+            <button class="similarbtn ">
+                <div class="pretext">
+                <i class="fas fa-cart-plus add-cart "></i> Add To Cart
+                </div>
             
-                    
-                </button>
+            </button>
 
-            </div>
-        </div>
+       </div>
+
+
+
+
+  
+        <!-- similar item 2 -->
+        <div class="gradient similar-item product-box">
+            <img src="../assets/product-detil/product6/similar/2.png" class="product-img">
+            <p class="section-title product-title">Samsung Galaxy Tab A7</p>
+            <H4 class="priceM price">$219</H4>
+            <button class="similarbtn ">
+                <div class="pretext">
+                <i class="fas fa-cart-plus add-cart"></i> Add To Cart
+                </div>
+            
+            </button>
+
+       </div>
+
 
         <!-- similar item 3 -->
-        <div data-id="3" class="gradient">
-            <div class="similar-item">
-                <img src="../assets/product-detil/product6/similar/3.png">
-                <p>Apple iPad Pro 11 2021</p>
-            </div>
-            <div class="similar-item ">
-                <H4 class="priceM">$799</H4>
-                <button class="similarbtn">
-                    <div class="pretext">
-                    <i class="fas fa-cart-plus add-to-cart-btn"></i> Add To Cart
-                    </div>
-                
-                    
-                    
-                    
-                </button>
+        <div class="gradient similar-item product-box">
+            <img src="../assets/product-detil/product6/similar/3.png " class="product-img">
+            <p class="section-title product-title">Apple iPad Pro 11 2021</p>
+            <H4 class="priceM price">$799</H4>
+            <button class="similarbtn ">
+                <div class="pretext">
+                <i class="fas fa-cart-plus add-cart "></i> Add To Cart
+                </div>
+            
+            </button>
 
-            </div>
-        </div>
+       </div>
+
     
 
 
@@ -174,8 +170,8 @@
 
     <div class="gradient2 ReviewOne">
         <div class="ReviewImg">  
-            <img src="../assets/product-detil/people/person1.jpg">
-            <p>Mohmmad alhilo</p>
+            <img src="../assets/review/2.jpg">
+            <p>Noah ahmad</p>
         </div>
 
         <div class="ReviewImg email ">
@@ -241,90 +237,68 @@
 
 
 
-   <!-- footer section starts  -->
-
-   <section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
+    <section class="footer">
+        <div class="box-container">
+          <div class="box">
             <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo hic eum veniam aut nisi. Libero autem
-                nemo amet recusandae eveniet?</p>
-        </div>
-        <div class="box">
+            <p>Techno-Power is one of the largest IT distributors in the market. Techno-Power specializes in offering a
+              complete selection of memory, storage products, and other hardware and software components for PCs and
+              servers,
+              and consumer electronics.</p>
+          </div>
+          <div class="box">
             <h3>branch locations</h3>
-            <a href="#">jordan</a>
+            <a href="#">Jordan</a>
             <a href="#">USA</a>
-            <a href="#">japan</a>
-            <a href="#">france</a>
-        </div>
-        <div class="box">
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+          </div>
+          <div class="box">
             <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">category</a>
-            <a href="#">product</a>
-            <a href="#">deal</a>
-            <a href="#">contact</a>
-        </div>
-        <div class="box">
+            <a href="../hompage.html">Home</a>
+            <a href="../customize.html">Category</a>
+            <a href="../catalog.html">Product</a>
+          </div>
+          <div class="box">
             <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">twitter</a>
-            <a href="#">instagram</a>
-            <a href="#">linked</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="tel:+962069999999">+962 06 999 99</a>
+          </div>
         </div>
+        <h1 class="credit"> Created by <span>Techno-Power</span> | All rights reserved! </h1>
+      </section>
+      <!-- footer section ends -->
 
-    </div>
+    
 
-    <h1 class="credit"> created by <span> REFORMER TEAM </span> | all rights reserved! </h1>
 
-</section>
-
-<!-- footer section ends -->
-
-<script>
-  let productImg = document.getElementById("productImg");
+    <script>
+        let productImg = document.getElementById("productImg");
 let btnproduct = document.getElementsByClassName("btnproduct");
 btnproduct[0].onclick=function(){
 productImg.src="../assets/product-detil/product6/1.jpg";
-
-
 for(b of btnproduct){
 b.classList.remove("active");
-
 }
 this.classList.add("active");
 }
-
-
 btnproduct[1].onclick=function(){
 productImg.src="../assets/product-detil/product6/2.jpg";
-
-
 for(b of btnproduct){
 b.classList.remove("active");
-
 }
-
-
 this.classList.add("active");
 }
 btnproduct[2].onclick=function(){
 productImg.src="../assets/product-detil/product6/3.jpg";
 for(b of btnproduct){
 b.classList.remove("active");
-
 }
 this.classList.add("active");
 }
-</script>
-
-<script src="../prod-main.js"></script>
-
+    </script>
     
-    
-    
+    <script src="./product-detil.js"></script>
 
 </body>
 </html>
