@@ -1,306 +1,148 @@
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-.img-deg {
-    float: right;
-    border-radius: 4%;
-    padding-right: 2%;
-
+.theme-text {
+  color:  rgba(132, 1, 255, 0.678);
 }
 
-.img-degg {
-    float: left;
-    border-radius: 4%;
-    padding-right: 2%;
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  padding:0 60px;
 }
-
-.first-div {
-    font-family: 'Asap Condensed', sans-serif;
-    background-color: #D4ADFC;
-    width: 70%;
-    left: 15%;
-    top: 20%;
-    padding: 1%;
-    position: absolute;
-    text-align: center;
-    border-radius: 4%;
-    font-size: large;
-    height: 52%;
-}
-
-.second-div {
-    font-family: 'Asap Condensed', sans-serif;
-    background-color: #D4ADFC;
-    width: 70%;
-    left: 15%;
-    height: 49%;
-    padding: 1%;
-    top: 80%;
-    position: absolute;
-    text-align: center;
-    border-radius: 4%;
-    font-size: large;
-}
-
-.team {
-    text-align: center;
-    margin-top: 59%;
-    font-family: 'Asap Condensed', sans-serif;
-    align-items: center;
-}
-
-body {
-
-    background: #ffffff;
-    color: black;
-    font-family: 'Asap Condensed', sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-.pro-card {
-    font-family: 'Asap Condensed', sans-serif;
-    width: 250px;
-    height: 200px;
-    padding: 50px;
-    background-size: 100% auto;
-    background-color: #5C469C;
-    transition: all 0.4s ease-out;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.pro-card img {
-    border-radius: 50%;
-    display: block;
-    transition: all 0.4s ease-out;
-    transform-origin: top;
-    position: relative;
-    z-index: 1;
-}
-
-.pro-card:hover {
-    background-position: 0 -50%
-}
-
-.pro-card:hover img {
-    transform: scale(0.3);
-}
-
-.pro-card .description {
-    color: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 30px;
-    font-size: 15px;
-    text-align: center;
-    font-family: 'Asap Condensed', sans-serif;
-}
-
-.pro-card .description h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-    transition: all 0.4s ease-out;
-    transform: translateX(-150%);
-}
-
-.pro-card .description p {
-    margin-bottom: 0px;
-    transition: all 0.4s ease-out;
-    transform: translateX(150%);
-}
-
-.pro-card:hover .description h3 {
-    transform: translateX(0%);
-}
-
-.pro-card:hover .description p {
-    transform: translateX(0%);
-}
-
 .card {
-    display: block;
-align-items: center;
-
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 40px;
 }
-
-.first {
-    display: inline-flex;
-   
-    font-size: 20px;
-    margin-top: 30px;
-    padding-left: 100px;
-
+.card:hover {
+  color: #400583c7;
 }
-
-.second {
-    display: inline-flex;
-  
-    font-size: 20px;
-    padding-left: 100px;
-    
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #9647f083;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
 }
-
-:root {
-    --bg-color: white;
-    --text-color: black;
-    --green: #7555b9;
+.card:hover::before {
+  left: 0%;
+  color:  rgba(196, 132, 255, 0.767);;
 }
-
-body {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
 }
-
-.dark-mode {
-    --bg-color: #222222;
-    --text-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
-.header-3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.3rem;
-    background: var(--green);
-}
-
-.header-3 {
-    background: #27036b;
-    color: #ffffff;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+.wrapper{
     position: relative;
-    z-index: 10000;
-
-}
-
-.header-3 .navbar a {
-    color: #ffffff;
-    font-size: 1.4rem;
-    margin-right: 2rem;
-    text-decoration: none;
-}
-
-.header-3 .icons a {
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    text-decoration: none;
-}
-
-.header-3 a:hover {
-    color: var(--green);
-}
-
-#menu-bar {
-    font-size: 3rem;
-    color: #666;
-    border: .1rem solid #666;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.header-3.active {
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-
-.header-3 .icons a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
-
-
-.footer {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    background-color: #0C134F;
-    color: white;
-    padding-left: 5px;
-    margin-top: 100px;
-    text-align: center;
-}
-
-.footer .box-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-
-.footer .box-container .box {
-    padding: 0.4rem;
-    flex: 20rem;
-    text-align: center;
-
+.background-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
 }
-
-.footer .box-container .box h3 {
-    color: #faf5f5;
-    font-size: 1.5rem;
-    padding: 0.4rem;
-    text-align: center;
+.bg-1{
+    flex: 1;
+    background-color: rgba(132, 1, 255, 0.678);
 }
-
-.footer .box-container .box p {
-    color: #fffafa;
-    font-size: 1rem;
-    padding: 0.4rem;
-    text-align: center;
+.bg-2{
+    flex: 1;
+    background-color: rgb(249, 187, 255);
 }
-
-.footer .box-container .box a {
-    font-family: 'Roboto', 'Segoe UI', sans-serif;
-    text-align: center;
-    display: block;
-    color: #fffdfd;
-    font-size: 1rem;
-    padding: 0.4rem;
-    text-decoration: none;
+.about-container{
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: white;
+    box-shadow: 24px 24px 30px #6d8dad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
 }
-
-.footer .box-container .box a:hover {
-    text-decoration: underline;
-    color: var(--green);
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.footer .credit {
-    font-size: 1rem;
-    padding: 0.4rem;
-    margin-top: 1.5rem;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
-    text-align: center;
-    font-weight: normal;
-    padding-left: 5px;
-
-
-}
-.footer .credit span {
-    color: var(--green);
-}
-
-
-.title{
-    font-size: 30px;
-    font-weight: 500;
+.image-container img {
+    width: 500px;
+    height: 500px;
     margin: 20px;
-    text-align: center;
-
+    border-radius: 10px;
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+.text-container h1{
+    font-size: 70px;
+    padding: 20px 0px;
+}
+.text-container a{
+    text-decoration: none;
+    padding: 12px;
+    margin: 50px 0px;
+    background-color: rebeccapurple;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.text-container a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid rebeccapurple;
+}
+@media screen and (max-width: 1600px){
+    .about-container{
+        width: 90%;
+    }
+    .image-container img{
+        width: 400px;
+        height: 400px;
+    }
+    .text-container h1{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-container {
+        align-items: center;
+    }
 }
