@@ -22,11 +22,6 @@
   display: none;
 }
 
-.header-3.active {
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 /* main */
 .centeralized {
@@ -266,7 +261,7 @@ input[type='range']::-webkit-slider-thumb {
 
 input[type=submit] {
   background-color: #0C134F;
-  border: # 4px;
+  border: 4px;
   color: white;
   width: 50%;
   align-self: center;
@@ -1072,12 +1067,6 @@ body {
   display: none;
 }
 
-.header-3.active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 .header-3 .icons a {
   color: #ffffff;
